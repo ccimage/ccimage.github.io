@@ -11,10 +11,6 @@
 
 ### Claude Code 调用 Codex：分工协作开发
 
-> 个人感觉这是上面那个帖子的改进，而不是原创
-
-[点击访问原帖](https://linux.do/t/topic/1004981)
-
 > 纠错部分
 > MCP配置项，command的参数不对，可能是因为codex更新了。
 > 在codex0.121版本，需要使用命令`codex mcp-server`启动服务。
