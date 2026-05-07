@@ -14,6 +14,7 @@
 > 纠错部分
 > MCP配置项，command的参数不对，可能是因为codex更新了。
 > 在codex0.121版本，需要使用命令`codex mcp-server`启动服务。
+> 正文里的模型名称，要匹配真实使用情况，比如有的是gpt-5.4有的是gpt-5.5
 
 #### 为什么要这样配置
 
@@ -68,7 +69,7 @@ claude mcp add-json --scope user codex '{
 1. **Separation of Concerns**: CC = brain (planning, search, decisions), Codex = hands (code generation, refactoring)
 2. **Codex-First Strategy**: Default to Codex for code tasks, CC only for trivial changes (<20 lines) and non-code work
 3. **Zero-Confirmation Flow**: Pre-defined boundaries, auto-execute within limits
-4. **MANDATORY Parameter Requirement**: ALWAYS use `model: "gpt-5-codex"`, `sandbox: "danger-full-access"`, `approval-policy: "on-failure"` when calling Codex MCP - NO EXCEPTIONS
+4. **MANDATORY Parameter Requirement**: ALWAYS use `model: "gpt-5.5"`, `sandbox: "danger-full-access"`, `approval-policy: "on-failure"` when calling Codex MCP - NO EXCEPTIONS
 
 ---
 
@@ -111,9 +112,9 @@ claude mcp add-json --scope user codex '{
 - ✅ Bug fixes → Codex
 - ❌ Only skip Codex for: typo fixes, comment-only changes, trivial config tweaks (<20 lines)
 
-**CRITICAL**: Always use `model: "gpt-5-codex"`, `sandbox: "danger-full-access"`, `approval-policy: "on-failure"` when calling Codex MCP
+**CRITICAL**: Always use `model: "gpt-5.5"`, `sandbox: "danger-full-access"`, `approval-policy: "on-failure"` when calling Codex MCP
 
-- ✅ Correct: `model: "gpt-5-codex"`, `sandbox: "danger-full-access"`, `approval-policy: "on-failure"`
+- ✅ Correct: `model: "gpt-5.5"`, `sandbox: "danger-full-access"`, `approval-policy: "on-failure"`
 - ❌ Wrong: Any other model, sandbox, or approval-policy value
 - This is a MANDATORY requirement, not optional
 
@@ -123,7 +124,7 @@ claude mcp add-json --scope user codex '{
 
 ### CRITICAL REQUIREMENT
 
-**MUST ALWAYS include `model: "gpt-5-codex"`, `sandbox: "danger-full-access"`, `approval-policy: "on-failure"`** - This is NON-NEGOTIABLE
+**MUST ALWAYS include `model: "gpt-5.5"`, `sandbox: "danger-full-access"`, `approval-policy: "on-failure"`** - This is NON-NEGOTIABLE
 
 - Every single Codex MCP call MUST include all three parameters with these exact values
 - Do NOT use any other model, sandbox, or approval-policy values
@@ -133,7 +134,7 @@ claude mcp add-json --scope user codex '{
 
 // First call
 mcp**codex**codex({
-model: "gpt-5-codex",
+model: "gpt-5.5",
 sandbox: "danger-full-access",
 approval-policy: "on-failure",
 prompt: "<structured prompt>"
@@ -143,7 +144,7 @@ prompt: "<structured prompt>"
 // Subsequent calls
 mcp**codex**codex_reply({
 conversationId: "<saved ID>",
-model: "gpt-5-codex",
+model: "gpt-5.5",
 sandbox: "danger-full-access",
 approval-policy: "on-failure",
 prompt: "<next step>"
@@ -197,7 +198,7 @@ Compatibility: [how to ensure]
 
 ### 3. Execution (Codex-First)
 
-- **Codex (Default)**: All code-related tasks → Call with structured prompt, **MUST include `model: "gpt-5-codex"`, `sandbox: "danger-full-access"`, `approval-policy: "on-failure"`**, save conversationId, monitor
+- **Codex (Default)**: All code-related tasks → Call with structured prompt, **MUST include `model: "gpt-5.5"`, `sandbox: "danger-full-access"`, `approval-policy: "on-failure"`**, save conversationId, monitor
 - **CC (Exception Only)**: Trivial non-code work → Edit/Write tools for typos, pure docs, simple configs (<20 lines)
 
 **CRITICAL**: Every Codex MCP call MUST include these three parameters with exact values - this is non-negotiable
@@ -243,7 +244,7 @@ Steps: 1. [step] 2. [step] 3. [step]
 
 | Pattern                           | Problem                                                                   | Fix                                                      |
 | --------------------------------- | ------------------------------------------------------------------------- | -------------------------------------------------------- |
-| **Using wrong model**             | **CRITICAL ERROR - Using non-gpt-5-codex model**                          | **ALWAYS use `model: "gpt-5-codex"` - NO EXCEPTIONS**    |
+| **Using wrong model**             | **CRITICAL ERROR - Using non-gpt-5.5 model**                              | **ALWAYS use `model: "gpt-5.5"` - NO EXCEPTIONS**        |
 | Missing sandbox parameter         | **MANDATORY breach - Codex runs without `sandbox: "danger-full-access"`** | **ALWAYS set `sandbox: "danger-full-access"`**           |
 | Missing approval-policy parameter | **MANDATORY breach - Codex runs without `approval-policy: "on-failure"`** | **ALWAYS set `approval-policy: "on-failure"`**           |
 | CC doing code work                | Waste Codex's strength                                                    | Use Codex for all code changes (even simple)             |

@@ -38,7 +38,9 @@ Use this file to discover all available pages before exploring further.</p>
 <blockquote>
 <p>纠错部分<br>
 MCP配置项，command的参数不对，可能是因为codex更新了。<br>
-在codex0.121版本，需要使用命令<code>codex mcp-server</code>启动服务。</p>
+在codex0.121版本，需要使用命令<code>codex mcp-server</code>启动服务。<br>
+正文里的模型名称，要匹配真实使用情况，比如有的是gpt-5.4有的是gpt-5.5
+</p>
 </blockquote>
 <h4 id="为什么要这样配置">为什么要这样配置 </h4>
 <p>上一篇说了怎么让 Claude Code 变聪明，这篇说怎么让它和 Codex 配合发挥各自优势。</p>
@@ -75,7 +77,7 @@ MCP配置项，command的参数不对，可能是因为codex更新了。<br>
 <span class="token list punctuation">1.</span> <span class="token bold"><span class="token punctuation">**</span><span class="token content">Separation of Concerns</span><span class="token punctuation">**</span></span>: CC = brain (planning, search, decisions), Codex = hands (code generation, refactoring)
 <span class="token list punctuation">2.</span> <span class="token bold"><span class="token punctuation">**</span><span class="token content">Codex-First Strategy</span><span class="token punctuation">**</span></span>: Default to Codex for code tasks, CC only for trivial changes (&lt;20 lines) and non-code work
 <span class="token list punctuation">3.</span> <span class="token bold"><span class="token punctuation">**</span><span class="token content">Zero-Confirmation Flow</span><span class="token punctuation">**</span></span>: Pre-defined boundaries, auto-execute within limits
-<span class="token list punctuation">4.</span> <span class="token bold"><span class="token punctuation">**</span><span class="token content">MANDATORY Parameter Requirement</span><span class="token punctuation">**</span></span>: ALWAYS use <span class="token code-snippet code keyword">`model: "gpt-5-codex"`</span>, <span class="token code-snippet code keyword">`sandbox: "danger-full-access"`</span>, <span class="token code-snippet code keyword">`approval-policy: "on-failure"`</span> when calling Codex MCP - NO EXCEPTIONS
+<span class="token list punctuation">4.</span> <span class="token bold"><span class="token punctuation">**</span><span class="token content">MANDATORY Parameter Requirement</span><span class="token punctuation">**</span></span>: ALWAYS use <span class="token code-snippet code keyword">`model: "gpt-5.5"`</span>, <span class="token code-snippet code keyword">`sandbox: "danger-full-access"`</span>, <span class="token code-snippet code keyword">`approval-policy: "on-failure"`</span> when calling Codex MCP - NO EXCEPTIONS
 
 <span class="token hr punctuation">---</span>
 
@@ -118,9 +120,9 @@ MCP配置项，command的参数不对，可能是因为codex更新了。<br>
 <span class="token list punctuation">-</span> ✅ Bug fixes → Codex
 <span class="token list punctuation">-</span> ❌ Only skip Codex for: typo fixes, comment-only changes, trivial config tweaks (&lt;20 lines)
 
-<span class="token bold"><span class="token punctuation">**</span><span class="token content">CRITICAL</span><span class="token punctuation">**</span></span>: Always use <span class="token code-snippet code keyword">`model: "gpt-5-codex"`</span>, <span class="token code-snippet code keyword">`sandbox: "danger-full-access"`</span>, <span class="token code-snippet code keyword">`approval-policy: "on-failure"`</span> when calling Codex MCP
+<span class="token bold"><span class="token punctuation">**</span><span class="token content">CRITICAL</span><span class="token punctuation">**</span></span>: Always use <span class="token code-snippet code keyword">`model: "gpt-5.5"`</span>, <span class="token code-snippet code keyword">`sandbox: "danger-full-access"`</span>, <span class="token code-snippet code keyword">`approval-policy: "on-failure"`</span> when calling Codex MCP
 
-<span class="token list punctuation">-</span> ✅ Correct: <span class="token code-snippet code keyword">`model: "gpt-5-codex"`</span>, <span class="token code-snippet code keyword">`sandbox: "danger-full-access"`</span>, <span class="token code-snippet code keyword">`approval-policy: "on-failure"`</span>
+<span class="token list punctuation">-</span> ✅ Correct: <span class="token code-snippet code keyword">`model: "gpt-5.5"`</span>, <span class="token code-snippet code keyword">`sandbox: "danger-full-access"`</span>, <span class="token code-snippet code keyword">`approval-policy: "on-failure"`</span>
 <span class="token list punctuation">-</span> ❌ Wrong: Any other model, sandbox, or approval-policy value
 <span class="token list punctuation">-</span> This is a MANDATORY requirement, not optional
 
@@ -130,7 +132,7 @@ MCP配置项，command的参数不对，可能是因为codex更新了。<br>
 
 <span class="token title important"><span class="token punctuation">###</span> CRITICAL REQUIREMENT</span>
 
-<span class="token bold"><span class="token punctuation">**</span><span class="token content">MUST ALWAYS include <span class="token code-snippet code keyword">`model: "gpt-5-codex"`</span>, <span class="token code-snippet code keyword">`sandbox: "danger-full-access"`</span>, <span class="token code-snippet code keyword">`approval-policy: "on-failure"`</span></span><span class="token punctuation">**</span></span> - This is NON-NEGOTIABLE
+<span class="token bold"><span class="token punctuation">**</span><span class="token content">MUST ALWAYS include <span class="token code-snippet code keyword">`model: "gpt-5.5"`</span>, <span class="token code-snippet code keyword">`sandbox: "danger-full-access"`</span>, <span class="token code-snippet code keyword">`approval-policy: "on-failure"`</span></span><span class="token punctuation">**</span></span> - This is NON-NEGOTIABLE
 
 <span class="token list punctuation">-</span> Every single Codex MCP call MUST include all three parameters with these exact values
 <span class="token list punctuation">-</span> Do NOT use any other model, sandbox, or approval-policy values
@@ -140,7 +142,7 @@ MCP配置项，command的参数不对，可能是因为codex更新了。<br>
 
 // First call
 mcp<span class="token bold"><span class="token punctuation">**</span><span class="token content">codex</span><span class="token punctuation">**</span></span>codex({
-model: "gpt-5-codex",
+model: "gpt-5.5",
 sandbox: "danger-full-access",
 approval-policy: "on-failure",
 prompt: "<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>structured</span> <span class="token attr-name">prompt</span><span class="token punctuation">&gt;</span></span>"
@@ -150,7 +152,7 @@ prompt: "<span class="token tag"><span class="token tag"><span class="token punc
 // Subsequent calls
 mcp<span class="token bold"><span class="token punctuation">**</span><span class="token content">codex</span><span class="token punctuation">**</span></span>codex_reply({
 conversationId: "<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>saved</span> <span class="token attr-name">ID</span><span class="token punctuation">&gt;</span></span>",
-model: "gpt-5-codex",
+model: "gpt-5.5",
 sandbox: "danger-full-access",
 approval-policy: "on-failure",
 prompt: "<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>next</span> <span class="token attr-name">step</span><span class="token punctuation">&gt;</span></span>"
@@ -204,7 +206,7 @@ Compatibility: [how to ensure]
 
 <span class="token title important"><span class="token punctuation">###</span> 3. Execution (Codex-First)</span>
 
-<span class="token list punctuation">-</span> <span class="token bold"><span class="token punctuation">**</span><span class="token content">Codex (Default)</span><span class="token punctuation">**</span></span>: All code-related tasks → Call with structured prompt, <span class="token bold"><span class="token punctuation">**</span><span class="token content">MUST include <span class="token code-snippet code keyword">`model: "gpt-5-codex"`</span>, <span class="token code-snippet code keyword">`sandbox: "danger-full-access"`</span>, <span class="token code-snippet code keyword">`approval-policy: "on-failure"`</span></span><span class="token punctuation">**</span></span>, save conversationId, monitor
+<span class="token list punctuation">-</span> <span class="token bold"><span class="token punctuation">**</span><span class="token content">Codex (Default)</span><span class="token punctuation">**</span></span>: All code-related tasks → Call with structured prompt, <span class="token bold"><span class="token punctuation">**</span><span class="token content">MUST include <span class="token code-snippet code keyword">`model: "gpt-5.5"`</span>, <span class="token code-snippet code keyword">`sandbox: "danger-full-access"`</span>, <span class="token code-snippet code keyword">`approval-policy: "on-failure"`</span></span><span class="token punctuation">**</span></span>, save conversationId, monitor
 <span class="token list punctuation">-</span> <span class="token bold"><span class="token punctuation">**</span><span class="token content">CC (Exception Only)</span><span class="token punctuation">**</span></span>: Trivial non-code work → Edit/Write tools for typos, pure docs, simple configs (&lt;20 lines)
 
 <span class="token bold"><span class="token punctuation">**</span><span class="token content">CRITICAL</span><span class="token punctuation">**</span></span>: Every Codex MCP call MUST include these three parameters with exact values - this is non-negotiable
@@ -250,7 +252,7 @@ Steps: 1. [step] 2. [step] 3. [step]
 
 <span class="token table"><span class="token table-header-row"><span class="token punctuation">|</span><span class="token table-header important"> Pattern                           </span><span class="token punctuation">|</span><span class="token table-header important"> Problem                                                                   </span><span class="token punctuation">|</span><span class="token table-header important"> Fix                                                      </span><span class="token punctuation">|</span>
 </span><span class="token table-line"><span class="token punctuation">|</span> <span class="token punctuation">---------------------------------</span> <span class="token punctuation">|</span> <span class="token punctuation">-------------------------------------------------------------------------</span> <span class="token punctuation">|</span> <span class="token punctuation">--------------------------------------------------------</span> <span class="token punctuation">|</span>
-</span><span class="token table-data-rows"><span class="token punctuation">|</span><span class="token table-data"> <span class="token bold"><span class="token punctuation">**</span><span class="token content">Using wrong model</span><span class="token punctuation">**</span></span>             </span><span class="token punctuation">|</span><span class="token table-data"> <span class="token bold"><span class="token punctuation">**</span><span class="token content">CRITICAL ERROR - Using non-gpt-5-codex model</span><span class="token punctuation">**</span></span>                          </span><span class="token punctuation">|</span><span class="token table-data"> <span class="token bold"><span class="token punctuation">**</span><span class="token content">ALWAYS use <span class="token code-snippet code keyword">`model: "gpt-5-codex"`</span> - NO EXCEPTIONS</span><span class="token punctuation">**</span></span>    </span><span class="token punctuation">|</span>
+</span><span class="token table-data-rows"><span class="token punctuation">|</span><span class="token table-data"> <span class="token bold"><span class="token punctuation">**</span><span class="token content">Using wrong model</span><span class="token punctuation">**</span></span>             </span><span class="token punctuation">|</span><span class="token table-data"> <span class="token bold"><span class="token punctuation">**</span><span class="token content">CRITICAL ERROR - Using non-gpt-5.5 model</span><span class="token punctuation">**</span></span>                          </span><span class="token punctuation">|</span><span class="token table-data"> <span class="token bold"><span class="token punctuation">**</span><span class="token content">ALWAYS use <span class="token code-snippet code keyword">`model: "gpt-5.5"`</span> - NO EXCEPTIONS</span><span class="token punctuation">**</span></span>    </span><span class="token punctuation">|</span>
 <span class="token punctuation">|</span><span class="token table-data"> Missing sandbox parameter         </span><span class="token punctuation">|</span><span class="token table-data"> <span class="token bold"><span class="token punctuation">**</span><span class="token content">MANDATORY breach - Codex runs without <span class="token code-snippet code keyword">`sandbox: "danger-full-access"`</span></span><span class="token punctuation">**</span></span> </span><span class="token punctuation">|</span><span class="token table-data"> <span class="token bold"><span class="token punctuation">**</span><span class="token content">ALWAYS set <span class="token code-snippet code keyword">`sandbox: "danger-full-access"`</span></span><span class="token punctuation">**</span></span>           </span><span class="token punctuation">|</span>
 <span class="token punctuation">|</span><span class="token table-data"> Missing approval-policy parameter </span><span class="token punctuation">|</span><span class="token table-data"> <span class="token bold"><span class="token punctuation">**</span><span class="token content">MANDATORY breach - Codex runs without <span class="token code-snippet code keyword">`approval-policy: "on-failure"`</span></span><span class="token punctuation">**</span></span> </span><span class="token punctuation">|</span><span class="token table-data"> <span class="token bold"><span class="token punctuation">**</span><span class="token content">ALWAYS set <span class="token code-snippet code keyword">`approval-policy: "on-failure"`</span></span><span class="token punctuation">**</span></span>           </span><span class="token punctuation">|</span>
 <span class="token punctuation">|</span><span class="token table-data"> CC doing code work                </span><span class="token punctuation">|</span><span class="token table-data"> Waste Codex's strength                                                    </span><span class="token punctuation">|</span><span class="token table-data"> Use Codex for all code changes (even simple)             </span><span class="token punctuation">|</span>
