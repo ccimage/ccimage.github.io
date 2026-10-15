@@ -1628,7 +1628,7 @@ button:active {
   <!--pnid:7cMwjCklf836KrpPidaIWU--><!-- ===== 古诗花园 ===== -->  <!--pnid:UqBuBeT5qoQ0VjerBIfj1r--><!-- ===== 古诗花园 ===== -->
   <div data-page-node-id="jRrE9MGTSyjmuRdDQShML9" class="page" id="page-poem">
     <h2 data-page-node-id="pao9KnOcJ1zZ5f5uHauUiG" class="section-title"><svg data-page-node-id="ivMik2qoMnzpAtixiSPna0" fill="#4ECDC4" height="24" viewBox="0 0 24 24" width="24" style="vertical-align:middle"><path data-page-node-id="aHOvHbcQaAiLEoL67nJpcu" d="M21 4H3a1 1 0 00-1 1v14a1 1 0 001 1h18a1 1 0 001-1V5a1 1 0 00-1-1zM4 6h16v2H4V6zm0 4h10v2H4v-2zm0 4h16v2H4v-2z"/></svg><!--pnid:UieFXDyeEvPynanxOYFZ80--> 古诗花园</h2>
-    <p data-page-node-id="KSa4ymUQbtLUt4Z1snI5s0" style="color:#666; margin-bottom:12px"><!--pnid:veOUPJsiVdSaGPCJfFwW3K-->共 <b data-page-node-id="pecIIYw5qOfGcsrKmmMx7U" id="poemTotal"><!--pnid:uyCYNdK9FNGhXIrSZjQIcP-->0</b><!--pnid:EAyfMgwW13Cxa0oQbNXIDG--> 首唐诗精选 · 点击卡片听深情朗诵 🎵</p>
+    <p data-page-node-id="KSa4ymUQbtLUt4Z1snI5s0" style="color:#666; margin-bottom:12px"><!--pnid:veOUPJsiVdSaGPCJfFwW3K-->共 <b data-page-node-id="pecIIYw5qOfGcsrKmmMx7U" id="poemTotal"><!--pnid:uyCYNdK9FNGhXIrSZjQIcP-->0</b><!--pnid:EAyfMgwW13Cxa0oQbNXIDG--> 首经典古诗 · 点击卡片听深情朗诵 🎵</p>
     <div data-page-node-id="GZWbWXqeMpVQz8NaTvLqNa" class="voice-bar">
       <label data-page-node-id="MNt2RO5R4PXNkcGjmRaBED" class="voice-label" for="voiceSelect"><!--pnid:AfFndPdwDDO5nvIy9CFNv5-->🗣️ 朗读音色</label>
       <select data-page-node-id="yogF9vkvbmPsQ97wYHDrCL" class="voice-select" id="voiceSelect" onchange="setVoice(this.value)"></select>
@@ -4628,7 +4628,429 @@ const poems = [
     [{ch:"后",py:'hòu'},{ch:"不",py:'bú'},{ch:"见",py:'jiàn'},{ch:"来",py:'lái'},{ch:"者",py:'zhě'},{ch:"。",py:''}],
     [{ch:"念",py:'niàn'},{ch:"天",py:'tiān'},{ch:"地",py:'dì'},{ch:"之",py:'zhī'},{ch:"悠",py:'yōu'},{ch:"悠",py:'yōu'},{ch:"，",py:''}],
     [{ch:"独",py:'dú'},{ch:"怆",py:'chuàng'},{ch:"然",py:'rán'},{ch:"而",py:'ér'},{ch:"涕",py:'tì'},{ch:"下",py:'xià'},{ch:"！",py:''}]
-  ], text: "前不见古人，后不见来者。念天地之悠悠，独怆然而涕下！" }
+  ], text: "前不见古人，后不见来者。念天地之悠悠，独怆然而涕下！" },
+  { title: "天净沙·秋", author: "白朴", genre: "写景", lines: [
+    [{ch:"孤",py:'gū'},{ch:"村",py:'cūn'},{ch:"落",py:'luò'},{ch:"日",py:'rì'},{ch:"残",py:'cán'},{ch:"霞",py:'xiá'},{ch:"，",py:''}],
+    [{ch:"轻",py:'qīng'},{ch:"烟",py:'yān'},{ch:"老",py:'lǎo'},{ch:"树",py:'shù'},{ch:"寒",py:'hán'},{ch:"鸦",py:'yā'},{ch:"，",py:''}],
+    [{ch:"一",py:'yì'},{ch:"点",py:'diǎn'},{ch:"飞",py:'fēi'},{ch:"鸿",py:'hóng'},{ch:"影",py:'yǐng'},{ch:"下",py:'xià'},{ch:"。",py:''}],
+    [{ch:"青",py:'qīng'},{ch:"山",py:'shān'},{ch:"绿",py:'lǜ'},{ch:"水",py:'shuǐ'},{ch:"，",py:''}],
+    [{ch:"白",py:'bái'},{ch:"草",py:'cǎo'},{ch:"红",py:'hóng'},{ch:"叶",py:'yè'},{ch:"黄",py:'huáng'},{ch:"花",py:'huā'},{ch:"。",py:''}]
+  ], text: "孤村落日残霞，轻烟老树寒鸦，一点飞鸿影下。青山绿水，白草红叶黄花。" },
+  { title: "七步诗", author: "曹植", genre: "感慨", lines: [
+    [{ch:"煮",py:'zhǔ'},{ch:"豆",py:'dòu'},{ch:"持",py:'chí'},{ch:"作",py:'zuò'},{ch:"羹",py:'gēng'},{ch:"，",py:''}],
+    [{ch:"漉",py:'lù'},{ch:"菽",py:'shū'},{ch:"以",py:'yǐ'},{ch:"为",py:'wéi'},{ch:"汁",py:'zhī'},{ch:"。",py:''}],
+    [{ch:"萁",py:'qí'},{ch:"在",py:'zài'},{ch:"釜",py:'fǔ'},{ch:"下",py:'xià'},{ch:"燃",py:'rán'},{ch:"，",py:''}],
+    [{ch:"豆",py:'dòu'},{ch:"在",py:'zài'},{ch:"釜",py:'fǔ'},{ch:"中",py:'zhōng'},{ch:"泣",py:'qì'},{ch:"。",py:''}],
+    [{ch:"本",py:'běn'},{ch:"自",py:'zì'},{ch:"同",py:'tóng'},{ch:"根",py:'gēn'},{ch:"生",py:'shēng'},{ch:"，",py:''}],
+    [{ch:"相",py:'xiāng'},{ch:"煎",py:'jiān'},{ch:"何",py:'hé'},{ch:"太",py:'tài'},{ch:"急",py:'jí'},{ch:"？",py:''}]
+  ], text: "煮豆持作羹，漉菽以为汁。萁在釜下燃，豆在釜中泣。本自同根生，相煎何太急？" },
+  { title: "三衢道中", author: "曾几", genre: "写景", lines: [
+    [{ch:"梅",py:'méi'},{ch:"子",py:'zi'},{ch:"黄",py:'huáng'},{ch:"时",py:'shí'},{ch:"日",py:'rì'},{ch:"日",py:'rì'},{ch:"晴",py:'qíng'},{ch:"，",py:''}],
+    [{ch:"小",py:'xiǎo'},{ch:"溪",py:'xī'},{ch:"泛",py:'fàn'},{ch:"尽",py:'jǐn'},{ch:"却",py:'què'},{ch:"山",py:'shān'},{ch:"行",py:'xíng'},{ch:"。",py:''}],
+    [{ch:"绿",py:'lǜ'},{ch:"阴",py:'yīn'},{ch:"不",py:'bù'},{ch:"减",py:'jiǎn'},{ch:"来",py:'lái'},{ch:"时",py:'shí'},{ch:"路",py:'lù'},{ch:"，",py:''}],
+    [{ch:"添",py:'tiān'},{ch:"得",py:'dé'},{ch:"黄",py:'huáng'},{ch:"鹂",py:'lí'},{ch:"四",py:'sì'},{ch:"五",py:'wǔ'},{ch:"声",py:'shēng'},{ch:"。",py:''}]
+  ], text: "梅子黄时日日晴，小溪泛尽却山行。绿阴不减来时路，添得黄鹂四五声。" },
+  { title: "舟夜书所见", author: "查慎行", genre: "写景", lines: [
+    [{ch:"月",py:'yuè'},{ch:"黑",py:'hēi'},{ch:"见",py:'jiàn'},{ch:"渔",py:'yú'},{ch:"灯",py:'dēng'},{ch:"，",py:''}],
+    [{ch:"孤",py:'gū'},{ch:"光",py:'guāng'},{ch:"一",py:'yì'},{ch:"点",py:'diǎn'},{ch:"萤",py:'yíng'},{ch:"。",py:''}],
+    [{ch:"微",py:'wēi'},{ch:"微",py:'wēi'},{ch:"风",py:'fēng'},{ch:"簇",py:'cù'},{ch:"浪",py:'làng'},{ch:"，",py:''}],
+    [{ch:"散",py:'sàn'},{ch:"作",py:'zuò'},{ch:"满",py:'mǎn'},{ch:"河",py:'hé'},{ch:"星",py:'xīng'},{ch:"。",py:''}]
+  ], text: "月黑见渔灯，孤光一点萤。微微风簇浪，散作满河星。" },
+  { title: "春夜喜雨", author: "杜甫", genre: "写景", lines: [
+    [{ch:"好",py:'hǎo'},{ch:"雨",py:'yǔ'},{ch:"知",py:'zhī'},{ch:"时",py:'shí'},{ch:"节",py:'jié'},{ch:"，",py:''}],
+    [{ch:"当",py:'dāng'},{ch:"春",py:'chūn'},{ch:"乃",py:'nǎi'},{ch:"发",py:'fā'},{ch:"生",py:'shēng'},{ch:"。",py:''}],
+    [{ch:"随",py:'suí'},{ch:"风",py:'fēng'},{ch:"潜",py:'qián'},{ch:"入",py:'rù'},{ch:"夜",py:'yè'},{ch:"，",py:''}],
+    [{ch:"润",py:'rùn'},{ch:"物",py:'wù'},{ch:"细",py:'xì'},{ch:"无",py:'wú'},{ch:"声",py:'shēng'},{ch:"。",py:''}],
+    [{ch:"野",py:'yě'},{ch:"径",py:'jìng'},{ch:"云",py:'yún'},{ch:"俱",py:'jù'},{ch:"黑",py:'hēi'},{ch:"，",py:''}],
+    [{ch:"江",py:'jiāng'},{ch:"船",py:'chuán'},{ch:"火",py:'huǒ'},{ch:"独",py:'dú'},{ch:"明",py:'míng'},{ch:"。",py:''}],
+    [{ch:"晓",py:'xiǎo'},{ch:"看",py:'kàn'},{ch:"红",py:'hóng'},{ch:"湿",py:'shī'},{ch:"处",py:'chù'},{ch:"，",py:''}],
+    [{ch:"花",py:'huā'},{ch:"重",py:'zhòng'},{ch:"锦",py:'jǐn'},{ch:"官",py:'guān'},{ch:"城",py:'chéng'},{ch:"。",py:''}]
+  ], text: "好雨知时节，当春乃发生。随风潜入夜，润物细无声。野径云俱黑，江船火独明。晓看红湿处，花重锦官城。" },
+  { title: "江畔独步寻花·其五", author: "杜甫", genre: "写景", lines: [
+    [{ch:"黄",py:'huáng'},{ch:"师",py:'shī'},{ch:"塔",py:'tǎ'},{ch:"前",py:'qián'},{ch:"江",py:'jiāng'},{ch:"水",py:'shuǐ'},{ch:"东",py:'dōng'},{ch:"，",py:''}],
+    [{ch:"春",py:'chūn'},{ch:"光",py:'guāng'},{ch:"懒",py:'lǎn'},{ch:"困",py:'kùn'},{ch:"倚",py:'yǐ'},{ch:"微",py:'wēi'},{ch:"风",py:'fēng'},{ch:"。",py:''}],
+    [{ch:"桃",py:'táo'},{ch:"花",py:'huā'},{ch:"一",py:'yī'},{ch:"簇",py:'cù'},{ch:"开",py:'kāi'},{ch:"无",py:'wú'},{ch:"主",py:'zhǔ'},{ch:"，",py:''}],
+    [{ch:"可",py:'kě'},{ch:"爱",py:'ài'},{ch:"深",py:'shēn'},{ch:"红",py:'hóng'},{ch:"爱",py:'ài'},{ch:"浅",py:'qiǎn'},{ch:"红",py:'hóng'},{ch:"？",py:''}]
+  ], text: "黄师塔前江水东，春光懒困倚微风。桃花一簇开无主，可爱深红爱浅红？" },
+  { title: "四时田园杂兴·其二十五", author: "范成大", genre: "田园", lines: [
+    [{ch:"梅",py:'méi'},{ch:"子",py:'zi'},{ch:"金",py:'jīn'},{ch:"黄",py:'huáng'},{ch:"杏",py:'xìng'},{ch:"子",py:'zi'},{ch:"肥",py:'féi'},{ch:"，",py:''}],
+    [{ch:"麦",py:'mài'},{ch:"花",py:'huā'},{ch:"雪",py:'xuě'},{ch:"白",py:'bái'},{ch:"菜",py:'cài'},{ch:"花",py:'huā'},{ch:"稀",py:'xī'},{ch:"。",py:''}],
+    [{ch:"日",py:'rì'},{ch:"长",py:'cháng'},{ch:"篱",py:'lí'},{ch:"落",py:'luò'},{ch:"无",py:'wú'},{ch:"人",py:'rén'},{ch:"过",py:'guò'},{ch:"，",py:''}],
+    [{ch:"惟",py:'wéi'},{ch:"有",py:'yǒu'},{ch:"蜻",py:'qīng'},{ch:"蜓",py:'tíng'},{ch:"蛱",py:'jiá'},{ch:"蝶",py:'dié'},{ch:"飞",py:'fēi'},{ch:"。",py:''}]
+  ], text: "梅子金黄杏子肥，麦花雪白菜花稀。日长篱落无人过，惟有蜻蜓蛱蝶飞。" },
+  { title: "江上渔者", author: "范仲淹", genre: "写景", lines: [
+    [{ch:"江",py:'jiāng'},{ch:"上",py:'shàng'},{ch:"往",py:'wǎng'},{ch:"来",py:'lái'},{ch:"人",py:'rén'},{ch:"，",py:''}],
+    [{ch:"但",py:'dàn'},{ch:"爱",py:'ài'},{ch:"鲈",py:'lú'},{ch:"鱼",py:'yú'},{ch:"美",py:'měi'},{ch:"。",py:''}],
+    [{ch:"君",py:'jūn'},{ch:"看",py:'kàn'},{ch:"一",py:'yī'},{ch:"叶",py:'yè'},{ch:"舟",py:'zhōu'},{ch:"，",py:''}],
+    [{ch:"出",py:'chū'},{ch:"没",py:'mò'},{ch:"风",py:'fēng'},{ch:"波",py:'bō'},{ch:"里",py:'lǐ'},{ch:"。",py:''}]
+  ], text: "江上往来人，但爱鲈鱼美。君看一叶舟，出没风波里。" },
+  { title: "己亥杂诗", author: "龚自珍", genre: "爱国", lines: [
+    [{ch:"九",py:'jiǔ'},{ch:"州",py:'zhōu'},{ch:"生",py:'shēng'},{ch:"气",py:'qì'},{ch:"恃",py:'shì'},{ch:"风",py:'fēng'},{ch:"雷",py:'léi'},{ch:"，",py:''}],
+    [{ch:"万",py:'wàn'},{ch:"马",py:'mǎ'},{ch:"齐",py:'qí'},{ch:"喑",py:'yīn'},{ch:"究",py:'jiū'},{ch:"可",py:'kě'},{ch:"哀",py:'āi'},{ch:"。",py:''}],
+    [{ch:"我",py:'wǒ'},{ch:"劝",py:'quàn'},{ch:"天",py:'tiān'},{ch:"公",py:'gōng'},{ch:"重",py:'zhòng'},{ch:"抖",py:'dǒu'},{ch:"擞",py:'sǒu'},{ch:"，",py:''}],
+    [{ch:"不",py:'bù'},{ch:"拘",py:'jū'},{ch:"一",py:'yī'},{ch:"格",py:'gé'},{ch:"降",py:'jiàng'},{ch:"人",py:'rén'},{ch:"才",py:'cái'},{ch:"。",py:''}]
+  ], text: "九州生气恃风雷，万马齐喑究可哀。我劝天公重抖擞，不拘一格降人才。" },
+  { title: "寒食", author: "韩翃", genre: "写景", lines: [
+    [{ch:"春",py:'chūn'},{ch:"城",py:'chéng'},{ch:"无",py:'wú'},{ch:"处",py:'chǔ'},{ch:"不",py:'bù'},{ch:"飞",py:'fēi'},{ch:"花",py:'huā'},{ch:"，",py:''}],
+    [{ch:"寒",py:'hán'},{ch:"食",py:'shí'},{ch:"东",py:'dōng'},{ch:"风",py:'fēng'},{ch:"御",py:'yù'},{ch:"柳",py:'liǔ'},{ch:"斜",py:'xié'},{ch:"。",py:''}],
+    [{ch:"日",py:'rì'},{ch:"暮",py:'mù'},{ch:"汉",py:'hàn'},{ch:"宫",py:'gōng'},{ch:"传",py:'chuán'},{ch:"蜡",py:'là'},{ch:"烛",py:'zhú'},{ch:"，",py:''}],
+    [{ch:"轻",py:'qīng'},{ch:"烟",py:'yān'},{ch:"散",py:'sàn'},{ch:"入",py:'rù'},{ch:"五",py:'wǔ'},{ch:"侯",py:'hóu'},{ch:"家",py:'jiā'},{ch:"。",py:''}]
+  ], text: "春城无处不飞花，寒食东风御柳斜。日暮汉宫传蜡烛，轻烟散入五侯家。" },
+  { title: "清平乐·春归何处", author: "黄庭坚", genre: "写景", lines: [
+    [{ch:"春",py:'chūn'},{ch:"归",py:'guī'},{ch:"何",py:'hé'},{ch:"处",py:'chù'},{ch:"？",py:''}],
+    [{ch:"寂",py:'jì'},{ch:"寞",py:'mò'},{ch:"无",py:'wú'},{ch:"行",py:'xíng'},{ch:"路",py:'lù'},{ch:"。",py:''}],
+    [{ch:"若",py:'ruò'},{ch:"有",py:'yǒu'},{ch:"人",py:'rén'},{ch:"知",py:'zhī'},{ch:"春",py:'chūn'},{ch:"去",py:'qù'},{ch:"处",py:'chù'},{ch:"，",py:''}],
+    [{ch:"唤",py:'huàn'},{ch:"取",py:'qǔ'},{ch:"归",py:'guī'},{ch:"来",py:'lái'},{ch:"同",py:'tóng'},{ch:"住",py:'zhù'},{ch:"。",py:''}],
+    [{ch:"春",py:'chūn'},{ch:"无",py:'wú'},{ch:"踪",py:'zōng'},{ch:"迹",py:'jì'},{ch:"谁",py:'shuí'},{ch:"知",py:'zhī'},{ch:"？",py:''}],
+    [{ch:"除",py:'chú'},{ch:"非",py:'fēi'},{ch:"问",py:'wèn'},{ch:"取",py:'qǔ'},{ch:"黄",py:'huáng'},{ch:"鹂",py:'lí'},{ch:"。",py:''}],
+    [{ch:"百",py:'bǎi'},{ch:"啭",py:'zhuàn'},{ch:"无",py:'wú'},{ch:"人",py:'rén'},{ch:"能",py:'néng'},{ch:"解",py:'jiě'},{ch:"，",py:''}],
+    [{ch:"因",py:'yīn'},{ch:"风",py:'fēng'},{ch:"飞",py:'fēi'},{ch:"过",py:'guò'},{ch:"蔷",py:'qiáng'},{ch:"薇",py:'wēi'},{ch:"。",py:''}]
+  ], text: "春归何处？寂寞无行路。若有人知春去处，唤取归来同住。春无踪迹谁知？除非问取黄鹂。百啭无人能解，因风飞过蔷薇。" },
+  { title: "村晚", author: "雷震", genre: "田园", lines: [
+    [{ch:"草",py:'cǎo'},{ch:"满",py:'mǎn'},{ch:"池",py:'chí'},{ch:"塘",py:'táng'},{ch:"水",py:'shuǐ'},{ch:"满",py:'mǎn'},{ch:"陂",py:'bēi'},{ch:"，",py:''}],
+    [{ch:"山",py:'shān'},{ch:"衔",py:'xián'},{ch:"落",py:'luò'},{ch:"日",py:'rì'},{ch:"浸",py:'jìn'},{ch:"寒",py:'hán'},{ch:"漪",py:'yī'},{ch:"。",py:''}],
+    [{ch:"牧",py:'mù'},{ch:"童",py:'tóng'},{ch:"归",py:'guī'},{ch:"去",py:'qù'},{ch:"横",py:'héng'},{ch:"牛",py:'niú'},{ch:"背",py:'bèi'},{ch:"，",py:''}],
+    [{ch:"短",py:'duǎn'},{ch:"笛",py:'dí'},{ch:"无",py:'wú'},{ch:"腔",py:'qiāng'},{ch:"信",py:'xìn'},{ch:"口",py:'kǒu'},{ch:"吹",py:'chuī'},{ch:"。",py:''}]
+  ], text: "草满池塘水满陂，山衔落日浸寒漪。牧童归去横牛背，短笛无腔信口吹。" },
+  { title: "夏日绝句", author: "李清照", genre: "爱国", lines: [
+    [{ch:"生",py:'shēng'},{ch:"当",py:'dàng'},{ch:"作",py:'zuò'},{ch:"人",py:'rén'},{ch:"杰",py:'jié'},{ch:"，",py:''}],
+    [{ch:"死",py:'sǐ'},{ch:"亦",py:'yì'},{ch:"为",py:'wèi'},{ch:"鬼",py:'guǐ'},{ch:"雄",py:'xióng'},{ch:"。",py:''}],
+    [{ch:"至",py:'zhì'},{ch:"今",py:'jīn'},{ch:"思",py:'sī'},{ch:"项",py:'xiàng'},{ch:"羽",py:'yǔ'},{ch:"，",py:''}],
+    [{ch:"不",py:'bù'},{ch:"肯",py:'kěn'},{ch:"过",py:'guò'},{ch:"江",py:'jiāng'},{ch:"东",py:'dōng'},{ch:"。",py:''}]
+  ], text: "生当作人杰，死亦为鬼雄。至今思项羽，不肯过江东。" },
+  { title: "乞巧", author: "林杰", genre: "节日", lines: [
+    [{ch:"七",py:'qī'},{ch:"夕",py:'xī'},{ch:"今",py:'jīn'},{ch:"宵",py:'xiāo'},{ch:"看",py:'kàn'},{ch:"碧",py:'bì'},{ch:"霄",py:'xiāo'},{ch:"，",py:''}],
+    [{ch:"牵",py:'qiān'},{ch:"牛",py:'niú'},{ch:"织",py:'zhī'},{ch:"女",py:'nǚ'},{ch:"渡",py:'dù'},{ch:"河",py:'hé'},{ch:"桥",py:'qiáo'},{ch:"。",py:''}],
+    [{ch:"家",py:'jiā'},{ch:"家",py:'jiā'},{ch:"乞",py:'qǐ'},{ch:"巧",py:'qiǎo'},{ch:"望",py:'wàng'},{ch:"秋",py:'qiū'},{ch:"月",py:'yuè'},{ch:"，",py:''}],
+    [{ch:"穿",py:'chuān'},{ch:"尽",py:'jǐn'},{ch:"红",py:'hóng'},{ch:"丝",py:'sī'},{ch:"几",py:'jǐ'},{ch:"万",py:'wàn'},{ch:"条",py:'tiáo'},{ch:"。",py:''}]
+  ], text: "七夕今宵看碧霄，牵牛织女渡河桥。家家乞巧望秋月，穿尽红丝几万条。" },
+  { title: "浪淘沙·其一", author: "刘禹锡", genre: "写景", lines: [
+    [{ch:"九",py:'jiǔ'},{ch:"曲",py:'qū'},{ch:"黄",py:'huáng'},{ch:"河",py:'hé'},{ch:"万",py:'wàn'},{ch:"里",py:'lǐ'},{ch:"沙",py:'shā'},{ch:"，",py:''}],
+    [{ch:"浪",py:'làng'},{ch:"淘",py:'táo'},{ch:"风",py:'fēng'},{ch:"簸",py:'bǒ'},{ch:"自",py:'zì'},{ch:"天",py:'tiān'},{ch:"涯",py:'yá'},{ch:"。",py:''}],
+    [{ch:"如",py:'rú'},{ch:"今",py:'jīn'},{ch:"直",py:'zhí'},{ch:"上",py:'shàng'},{ch:"银",py:'yín'},{ch:"河",py:'hé'},{ch:"去",py:'qù'},{ch:"，",py:''}],
+    [{ch:"同",py:'tóng'},{ch:"到",py:'dào'},{ch:"牵",py:'qiān'},{ch:"牛",py:'niú'},{ch:"织",py:'zhī'},{ch:"女",py:'nǚ'},{ch:"家",py:'jiā'},{ch:"。",py:''}]
+  ], text: "九曲黄河万里沙，浪淘风簸自天涯。如今直上银河去，同到牵牛织女家。" },
+  { title: "秋风引", author: "刘禹锡", genre: "思乡", lines: [
+    [{ch:"何",py:'hé'},{ch:"处",py:'chù'},{ch:"秋",py:'qiū'},{ch:"风",py:'fēng'},{ch:"至",py:'zhì'},{ch:"？",py:''}],
+    [{ch:"萧",py:'xiāo'},{ch:"萧",py:'xiāo'},{ch:"送",py:'sòng'},{ch:"雁",py:'yàn'},{ch:"群",py:'qún'},{ch:"。",py:''}],
+    [{ch:"朝",py:'zhāo'},{ch:"来",py:'lái'},{ch:"入",py:'rù'},{ch:"庭",py:'tíng'},{ch:"树",py:'shù'},{ch:"，",py:''}],
+    [{ch:"孤",py:'gū'},{ch:"客",py:'kè'},{ch:"最",py:'zuì'},{ch:"先",py:'xiān'},{ch:"闻",py:'wén'},{ch:"。",py:''}]
+  ], text: "何处秋风至？萧萧送雁群。朝来入庭树，孤客最先闻。" },
+  { title: "竹枝词", author: "刘禹锡", genre: "写景", lines: [
+    [{ch:"杨",py:'yáng'},{ch:"柳",py:'liǔ'},{ch:"青",py:'qīng'},{ch:"青",py:'qīng'},{ch:"江",py:'jiāng'},{ch:"水",py:'shuǐ'},{ch:"平",py:'píng'},{ch:"，",py:''}],
+    [{ch:"闻",py:'wén'},{ch:"郎",py:'láng'},{ch:"江",py:'jiāng'},{ch:"上",py:'shàng'},{ch:"踏",py:'tà'},{ch:"歌",py:'gē'},{ch:"声",py:'shēng'},{ch:"。",py:''}],
+    [{ch:"东",py:'dōng'},{ch:"边",py:'biān'},{ch:"日",py:'rì'},{ch:"出",py:'chū'},{ch:"西",py:'xī'},{ch:"边",py:'biān'},{ch:"雨",py:'yǔ'},{ch:"，",py:''}],
+    [{ch:"道",py:'dào'},{ch:"是",py:'shì'},{ch:"无",py:'wú'},{ch:"晴",py:'qíng'},{ch:"却",py:'què'},{ch:"有",py:'yǒu'},{ch:"晴",py:'qíng'},{ch:"。",py:''}]
+  ], text: "杨柳青青江水平，闻郎江上踏歌声。东边日出西边雨，道是无晴却有晴。" },
+  { title: "卜算子·咏梅", author: "陆游", genre: "咏物", lines: [
+    [{ch:"驿",py:'yì'},{ch:"外",py:'wài'},{ch:"断",py:'duàn'},{ch:"桥",py:'qiáo'},{ch:"边",py:'biān'},{ch:"，",py:''}],
+    [{ch:"寂",py:'jì'},{ch:"寞",py:'mò'},{ch:"开",py:'kāi'},{ch:"无",py:'wú'},{ch:"主",py:'zhǔ'},{ch:"。",py:''}],
+    [{ch:"已",py:'yǐ'},{ch:"是",py:'shì'},{ch:"黄",py:'huáng'},{ch:"昏",py:'hūn'},{ch:"独",py:'dú'},{ch:"自",py:'zì'},{ch:"愁",py:'chóu'},{ch:"，",py:''}],
+    [{ch:"更",py:'gèng'},{ch:"著",py:'zhuó'},{ch:"风",py:'fēng'},{ch:"和",py:'hé'},{ch:"雨",py:'yǔ'},{ch:"。",py:''}],
+    [{ch:"无",py:'wú'},{ch:"意",py:'yì'},{ch:"苦",py:'kǔ'},{ch:"争",py:'zhēng'},{ch:"春",py:'chūn'},{ch:"，",py:''}],
+    [{ch:"一",py:'yī'},{ch:"任",py:'rèn'},{ch:"群",py:'qún'},{ch:"芳",py:'fāng'},{ch:"妒",py:'dù'},{ch:"。",py:''}],
+    [{ch:"零",py:'líng'},{ch:"落",py:'luò'},{ch:"成",py:'chéng'},{ch:"泥",py:'ní'},{ch:"碾",py:'niǎn'},{ch:"作",py:'zuò'},{ch:"尘",py:'chén'},{ch:"，",py:''}],
+    [{ch:"只",py:'zhǐ'},{ch:"有",py:'yǒu'},{ch:"香",py:'xiāng'},{ch:"如",py:'rú'},{ch:"故",py:'gù'},{ch:"。",py:''}]
+  ], text: "驿外断桥边，寂寞开无主。已是黄昏独自愁，更著风和雨。无意苦争春，一任群芳妒。零落成泥碾作尘，只有香如故。" },
+  { title: "塞下曲·其三", author: "卢纶", genre: "边塞", lines: [
+    [{ch:"月",py:'yuè'},{ch:"黑",py:'hēi'},{ch:"雁",py:'yàn'},{ch:"飞",py:'fēi'},{ch:"高",py:'gāo'},{ch:"，",py:''}],
+    [{ch:"单",py:'chán'},{ch:"于",py:'yú'},{ch:"夜",py:'yè'},{ch:"遁",py:'dùn'},{ch:"逃",py:'táo'},{ch:"。",py:''}],
+    [{ch:"欲",py:'yù'},{ch:"将",py:'jiāng'},{ch:"轻",py:'qīng'},{ch:"骑",py:'jì'},{ch:"逐",py:'zhú'},{ch:"，",py:''}],
+    [{ch:"大",py:'dà'},{ch:"雪",py:'xuě'},{ch:"满",py:'mǎn'},{ch:"弓",py:'gōng'},{ch:"刀",py:'dāo'},{ch:"。",py:''}]
+  ], text: "月黑雁飞高，单于夜遁逃。欲将轻骑逐，大雪满弓刀。" },
+  { title: "塞下曲·其二", author: "卢纶", genre: "边塞", lines: [
+    [{ch:"林",py:'lín'},{ch:"暗",py:'àn'},{ch:"草",py:'cǎo'},{ch:"惊",py:'jīng'},{ch:"风",py:'fēng'},{ch:"，",py:''}],
+    [{ch:"将",py:'jiāng'},{ch:"军",py:'jūn'},{ch:"夜",py:'yè'},{ch:"引",py:'yǐn'},{ch:"弓",py:'gōng'},{ch:"。",py:''}],
+    [{ch:"平",py:'píng'},{ch:"明",py:'míng'},{ch:"寻",py:'xún'},{ch:"白",py:'bái'},{ch:"羽",py:'yǔ'},{ch:"，",py:''}],
+    [{ch:"没",py:'mò'},{ch:"在",py:'zài'},{ch:"石",py:'shí'},{ch:"棱",py:'léng'},{ch:"中",py:'zhōng'},{ch:"。",py:''}]
+  ], text: "林暗草惊风，将军夜引弓。平明寻白羽，没在石棱中。" },
+  { title: "游山西村", author: "陆游", genre: "田园", lines: [
+    [{ch:"莫",py:'mò'},{ch:"笑",py:'xiào'},{ch:"农",py:'nóng'},{ch:"家",py:'jiā'},{ch:"腊",py:'là'},{ch:"酒",py:'jiǔ'},{ch:"浑",py:'hún'},{ch:"，",py:''}],
+    [{ch:"丰",py:'fēng'},{ch:"年",py:'nián'},{ch:"留",py:'liú'},{ch:"客",py:'kè'},{ch:"足",py:'zú'},{ch:"鸡",py:'jī'},{ch:"豚",py:'tún'},{ch:"。",py:''}],
+    [{ch:"山",py:'shān'},{ch:"重",py:'chóng'},{ch:"水",py:'shuǐ'},{ch:"复",py:'fù'},{ch:"疑",py:'yí'},{ch:"无",py:'wú'},{ch:"路",py:'lù'},{ch:"，",py:''}],
+    [{ch:"柳",py:'liǔ'},{ch:"暗",py:'àn'},{ch:"花",py:'huā'},{ch:"明",py:'míng'},{ch:"又",py:'yòu'},{ch:"一",py:'yī'},{ch:"村",py:'cūn'},{ch:"。",py:''}],
+    [{ch:"箫",py:'xiāo'},{ch:"鼓",py:'gǔ'},{ch:"追",py:'zhuī'},{ch:"随",py:'suí'},{ch:"春",py:'chūn'},{ch:"社",py:'shè'},{ch:"近",py:'jìn'},{ch:"，",py:''}],
+    [{ch:"衣",py:'yī'},{ch:"冠",py:'guān'},{ch:"简",py:'jiǎn'},{ch:"朴",py:'piáo'},{ch:"古",py:'gǔ'},{ch:"风",py:'fēng'},{ch:"存",py:'cún'},{ch:"。",py:''}],
+    [{ch:"从",py:'cóng'},{ch:"今",py:'jīn'},{ch:"若",py:'ruò'},{ch:"许",py:'xǔ'},{ch:"闲",py:'xián'},{ch:"乘",py:'chéng'},{ch:"月",py:'yuè'},{ch:"，",py:''}],
+    [{ch:"拄",py:'zhǔ'},{ch:"杖",py:'zhàng'},{ch:"无",py:'wú'},{ch:"时",py:'shí'},{ch:"夜",py:'yè'},{ch:"叩",py:'kòu'},{ch:"门",py:'mén'},{ch:"。",py:''}]
+  ], text: "莫笑农家腊酒浑，丰年留客足鸡豚。山重水复疑无路，柳暗花明又一村。箫鼓追随春社近，衣冠简朴古风存。从今若许闲乘月，拄杖无时夜叩门。" },
+  { title: "示儿", author: "陆游", genre: "爱国", lines: [
+    [{ch:"死",py:'sǐ'},{ch:"去",py:'qù'},{ch:"元",py:'yuán'},{ch:"知",py:'zhī'},{ch:"万",py:'wàn'},{ch:"事",py:'shì'},{ch:"空",py:'kōng'},{ch:"，",py:''}],
+    [{ch:"但",py:'dàn'},{ch:"悲",py:'bēi'},{ch:"不",py:'bú'},{ch:"见",py:'jiàn'},{ch:"九",py:'jiǔ'},{ch:"州",py:'zhōu'},{ch:"同",py:'tóng'},{ch:"。",py:''}],
+    [{ch:"王",py:'wáng'},{ch:"师",py:'shī'},{ch:"北",py:'běi'},{ch:"定",py:'dìng'},{ch:"中",py:'zhōng'},{ch:"原",py:'yuán'},{ch:"日",py:'rì'},{ch:"，",py:''}],
+    [{ch:"家",py:'jiā'},{ch:"祭",py:'jì'},{ch:"无",py:'wú'},{ch:"忘",py:'wàng'},{ch:"告",py:'gào'},{ch:"乃",py:'nǎi'},{ch:"翁",py:'wēng'},{ch:"。",py:''}]
+  ], text: "死去元知万事空，但悲不见九州同。王师北定中原日，家祭无忘告乃翁。" },
+  { title: "雪梅", author: "卢钺", genre: "咏物", lines: [
+    [{ch:"梅",py:'méi'},{ch:"雪",py:'xuě'},{ch:"争",py:'zhēng'},{ch:"春",py:'chūn'},{ch:"未",py:'wèi'},{ch:"肯",py:'kěn'},{ch:"降",py:'jiàng'},{ch:"，",py:''}],
+    [{ch:"骚",py:'sāo'},{ch:"人",py:'rén'},{ch:"阁",py:'gé'},{ch:"笔",py:'bǐ'},{ch:"费",py:'fèi'},{ch:"评",py:'píng'},{ch:"章",py:'zhāng'},{ch:"。",py:''}],
+    [{ch:"梅",py:'méi'},{ch:"须",py:'xū'},{ch:"逊",py:'xùn'},{ch:"雪",py:'xuě'},{ch:"三",py:'sān'},{ch:"分",py:'fēn'},{ch:"白",py:'bái'},{ch:"，",py:''}],
+    [{ch:"雪",py:'xuě'},{ch:"却",py:'què'},{ch:"输",py:'shū'},{ch:"梅",py:'méi'},{ch:"一",py:'yī'},{ch:"段",py:'duàn'},{ch:"香",py:'xiāng'},{ch:"。",py:''}]
+  ], text: "梅雪争春未肯降，骚人阁笔费评章。梅须逊雪三分白，雪却输梅一段香。" },
+  { title: "蜂", author: "罗隐", genre: "咏物", lines: [
+    [{ch:"不",py:'bù'},{ch:"论",py:'lùn'},{ch:"平",py:'píng'},{ch:"地",py:'dì'},{ch:"与",py:'yǔ'},{ch:"山",py:'shān'},{ch:"尖",py:'jiān'},{ch:"，",py:''}],
+    [{ch:"无",py:'wú'},{ch:"限",py:'xiàn'},{ch:"风",py:'fēng'},{ch:"光",py:'guāng'},{ch:"尽",py:'jǐn'},{ch:"被",py:'bèi'},{ch:"占",py:'zhàn'},{ch:"。",py:''}],
+    [{ch:"采",py:'cǎi'},{ch:"得",py:'dé'},{ch:"百",py:'bǎi'},{ch:"花",py:'huā'},{ch:"成",py:'chéng'},{ch:"蜜",py:'mì'},{ch:"后",py:'hòu'},{ch:"，",py:''}],
+    [{ch:"为",py:'wèi'},{ch:"谁",py:'shuí'},{ch:"辛",py:'xīn'},{ch:"苦",py:'kǔ'},{ch:"为",py:'wèi'},{ch:"谁",py:'shuí'},{ch:"甜",py:'tián'},{ch:"？",py:''}]
+  ], text: "不论平地与山尖，无限风光尽被占。采得百花成蜜后，为谁辛苦为谁甜？" },
+  { title: "牧童", author: "吕岩", genre: "童趣", lines: [
+    [{ch:"草",py:'cǎo'},{ch:"铺",py:'pù'},{ch:"横",py:'héng'},{ch:"野",py:'yě'},{ch:"六",py:'liù'},{ch:"七",py:'qī'},{ch:"里",py:'lǐ'},{ch:"，",py:''}],
+    [{ch:"笛",py:'dí'},{ch:"弄",py:'nòng'},{ch:"晚",py:'wǎn'},{ch:"风",py:'fēng'},{ch:"三",py:'sān'},{ch:"四",py:'sì'},{ch:"声",py:'shēng'},{ch:"。",py:''}],
+    [{ch:"归",py:'guī'},{ch:"来",py:'lái'},{ch:"饱",py:'bǎo'},{ch:"饭",py:'fàn'},{ch:"黄",py:'huáng'},{ch:"昏",py:'hūn'},{ch:"后",py:'hòu'},{ch:"，",py:''}],
+    [{ch:"不",py:'bù'},{ch:"脱",py:'tuō'},{ch:"蓑",py:'suō'},{ch:"衣",py:'yī'},{ch:"卧",py:'wò'},{ch:"月",py:'yuè'},{ch:"明",py:'míng'},{ch:"。",py:''}]
+  ], text: "草铺横野六七里，笛弄晚风三四声。归来饱饭黄昏后，不脱蓑衣卧月明。" },
+  { title: "天净沙·秋思", author: "马致远", genre: "思乡", lines: [
+    [{ch:"枯",py:'kū'},{ch:"藤",py:'téng'},{ch:"老",py:'lǎo'},{ch:"树",py:'shù'},{ch:"昏",py:'hūn'},{ch:"鸦",py:'yā'},{ch:"，",py:''}],
+    [{ch:"小",py:'xiǎo'},{ch:"桥",py:'qiáo'},{ch:"流",py:'liú'},{ch:"水",py:'shuǐ'},{ch:"人",py:'rén'},{ch:"家",py:'jiā'},{ch:"，",py:''}],
+    [{ch:"古",py:'gǔ'},{ch:"道",py:'dào'},{ch:"西",py:'xī'},{ch:"风",py:'fēng'},{ch:"瘦",py:'shòu'},{ch:"马",py:'mǎ'},{ch:"。",py:''}],
+    [{ch:"夕",py:'xī'},{ch:"阳",py:'yáng'},{ch:"西",py:'xī'},{ch:"下",py:'xià'},{ch:"，",py:''}],
+    [{ch:"断",py:'duàn'},{ch:"肠",py:'cháng'},{ch:"人",py:'rén'},{ch:"在",py:'zài'},{ch:"天",py:'tiān'},{ch:"涯",py:'yá'},{ch:"。",py:''}]
+  ], text: "枯藤老树昏鸦，小桥流水人家，古道西风瘦马。夕阳西下，断肠人在天涯。" },
+  { title: "长相思", author: "纳兰性德", genre: "思乡", lines: [
+    [{ch:"山",py:'shān'},{ch:"一",py:'yī'},{ch:"程",py:'chéng'},{ch:"，",py:''}],
+    [{ch:"水",py:'shuǐ'},{ch:"一",py:'yī'},{ch:"程",py:'chéng'},{ch:"，",py:''}],
+    [{ch:"身",py:'shēn'},{ch:"向",py:'xiàng'},{ch:"榆",py:'yú'},{ch:"关",py:'guān'},{ch:"那",py:'nà'},{ch:"畔",py:'pàn'},{ch:"行",py:'xíng'},{ch:"，",py:''}],
+    [{ch:"夜",py:'yè'},{ch:"深",py:'shēn'},{ch:"千",py:'qiān'},{ch:"帐",py:'zhàng'},{ch:"灯",py:'dēng'},{ch:"。",py:''}],
+    [{ch:"风",py:'fēng'},{ch:"一",py:'yī'},{ch:"更",py:'gèng'},{ch:"，",py:''}],
+    [{ch:"雪",py:'xuě'},{ch:"一",py:'yī'},{ch:"更",py:'gèng'},{ch:"，",py:''}],
+    [{ch:"聒",py:'guā'},{ch:"碎",py:'suì'},{ch:"乡",py:'xiāng'},{ch:"心",py:'xīn'},{ch:"梦",py:'mèng'},{ch:"不",py:'bù'},{ch:"成",py:'chéng'},{ch:"，",py:''}],
+    [{ch:"故",py:'gù'},{ch:"园",py:'yuán'},{ch:"无",py:'wú'},{ch:"此",py:'cǐ'},{ch:"声",py:'shēng'},{ch:"。",py:''}]
+  ], text: "山一程，水一程，身向榆关那畔行，夜深千帐灯。风一更，雪一更，聒碎乡心梦不成，故园无此声。" },
+  { title: "山村咏怀", author: "邵雍", genre: "写景", lines: [
+    [{ch:"一",py:'yī'},{ch:"去",py:'qù'},{ch:"二",py:'èr'},{ch:"三",py:'sān'},{ch:"里",py:'lǐ'},{ch:"，",py:''}],
+    [{ch:"烟",py:'yān'},{ch:"村",py:'cūn'},{ch:"四",py:'sì'},{ch:"五",py:'wǔ'},{ch:"家",py:'jiā'},{ch:"。",py:''}],
+    [{ch:"亭",py:'tíng'},{ch:"台",py:'tái'},{ch:"六",py:'liù'},{ch:"七",py:'qī'},{ch:"座",py:'zuò'},{ch:"，",py:''}],
+    [{ch:"八",py:'bā'},{ch:"九",py:'jiǔ'},{ch:"十",py:'shí'},{ch:"枝",py:'zhī'},{ch:"花",py:'huā'},{ch:"。",py:''}]
+  ], text: "一去二三里，烟村四五家。亭台六七座，八九十枝花。" },
+  { title: "采薇(节选)", author: "诗经", genre: "思乡", lines: [
+    [{ch:"昔",py:'xī'},{ch:"我",py:'wǒ'},{ch:"往",py:'wǎng'},{ch:"矣",py:'yǐ'},{ch:"，",py:''}],
+    [{ch:"杨",py:'yáng'},{ch:"柳",py:'liǔ'},{ch:"依",py:'yī'},{ch:"依",py:'yī'},{ch:"。",py:''}],
+    [{ch:"今",py:'jīn'},{ch:"我",py:'wǒ'},{ch:"来",py:'lái'},{ch:"思",py:'sī'},{ch:"，",py:''}],
+    [{ch:"雨",py:'yǔ'},{ch:"雪",py:'xuě'},{ch:"霏",py:'fēi'},{ch:"霏",py:'fēi'},{ch:"。",py:''}]
+  ], text: "昔我往矣，杨柳依依。今我来思，雨雪霏霏。" },
+  { title: "六月二十七日望湖楼醉书", author: "苏轼", genre: "写景", lines: [
+    [{ch:"黑",py:'hēi'},{ch:"云",py:'yún'},{ch:"翻",py:'fān'},{ch:"墨",py:'mò'},{ch:"未",py:'wèi'},{ch:"遮",py:'zhē'},{ch:"山",py:'shān'},{ch:"，",py:''}],
+    [{ch:"白",py:'bái'},{ch:"雨",py:'yǔ'},{ch:"跳",py:'tiào'},{ch:"珠",py:'zhū'},{ch:"乱",py:'luàn'},{ch:"入",py:'rù'},{ch:"船",py:'chuán'},{ch:"。",py:''}],
+    [{ch:"卷",py:'juǎn'},{ch:"地",py:'dì'},{ch:"风",py:'fēng'},{ch:"来",py:'lái'},{ch:"忽",py:'hū'},{ch:"吹",py:'chuī'},{ch:"散",py:'sàn'},{ch:"，",py:''}],
+    [{ch:"望",py:'wàng'},{ch:"湖",py:'hú'},{ch:"楼",py:'lóu'},{ch:"下",py:'xià'},{ch:"水",py:'shuǐ'},{ch:"如",py:'rú'},{ch:"天",py:'tiān'},{ch:"。",py:''}]
+  ], text: "黑云翻墨未遮山，白雨跳珠乱入船。卷地风来忽吹散，望湖楼下水如天。" },
+  { title: "浣溪沙·游蕲水清泉寺", author: "苏轼", genre: "哲理", lines: [
+    [{ch:"游",py:'yóu'},{ch:"蕲",py:'qí'},{ch:"水",py:'shuǐ'},{ch:"清",py:'qīng'},{ch:"泉",py:'quán'},{ch:"寺",py:'sì'},{ch:"，",py:''}],
+    [{ch:"寺",py:'sì'},{ch:"临",py:'lín'},{ch:"兰",py:'lán'},{ch:"溪",py:'xī'},{ch:"，",py:''}],
+    [{ch:"溪",py:'xī'},{ch:"水",py:'shuǐ'},{ch:"西",py:'xī'},{ch:"流",py:'liú'},{ch:"。",py:''}],
+    [{ch:"山",py:'shān'},{ch:"下",py:'xià'},{ch:"兰",py:'lán'},{ch:"芽",py:'yá'},{ch:"短",py:'duǎn'},{ch:"浸",py:'jìn'},{ch:"溪",py:'xī'},{ch:"，",py:''}],
+    [{ch:"松",py:'sōng'},{ch:"间",py:'jiān'},{ch:"沙",py:'shā'},{ch:"路",py:'lù'},{ch:"净",py:'jìng'},{ch:"无",py:'wú'},{ch:"泥",py:'ní'},{ch:"，",py:''}],
+    [{ch:"萧",py:'xiāo'},{ch:"萧",py:'xiāo'},{ch:"暮",py:'mù'},{ch:"雨",py:'yǔ'},{ch:"子",py:'zi'},{ch:"规",py:'guī'},{ch:"啼",py:'tí'},{ch:"。",py:''}],
+    [{ch:"谁",py:'shuí'},{ch:"道",py:'dào'},{ch:"人",py:'rén'},{ch:"生",py:'shēng'},{ch:"无",py:'wú'},{ch:"再",py:'zài'},{ch:"少",py:'shào'},{ch:"？",py:''}],
+    [{ch:"门",py:'mén'},{ch:"前",py:'qián'},{ch:"流",py:'liú'},{ch:"水",py:'shuǐ'},{ch:"尚",py:'shàng'},{ch:"能",py:'néng'},{ch:"西",py:'xī'},{ch:"！",py:''}],
+    [{ch:"休",py:'xiū'},{ch:"将",py:'jiāng'},{ch:"白",py:'bái'},{ch:"发",py:'fà'},{ch:"唱",py:'chàng'},{ch:"黄",py:'huáng'},{ch:"鸡",py:'jī'},{ch:"。",py:''}]
+  ], text: "游蕲水清泉寺，寺临兰溪，溪水西流。山下兰芽短浸溪，松间沙路净无泥，萧萧暮雨子规啼。谁道人生无再少？门前流水尚能西！休将白发唱黄鸡。" },
+  { title: "赠刘景文", author: "苏轼", genre: "写景", lines: [
+    [{ch:"荷",py:'hé'},{ch:"尽",py:'jǐn'},{ch:"已",py:'yǐ'},{ch:"无",py:'wú'},{ch:"擎",py:'qíng'},{ch:"雨",py:'yǔ'},{ch:"盖",py:'gài'},{ch:"，",py:''}],
+    [{ch:"菊",py:'jú'},{ch:"残",py:'cán'},{ch:"犹",py:'yóu'},{ch:"有",py:'yǒu'},{ch:"傲",py:'ào'},{ch:"霜",py:'shuāng'},{ch:"枝",py:'zhī'},{ch:"。",py:''}],
+    [{ch:"一",py:'yī'},{ch:"年",py:'nián'},{ch:"好",py:'hǎo'},{ch:"景",py:'jǐng'},{ch:"君",py:'jūn'},{ch:"须",py:'xū'},{ch:"记",py:'jì'},{ch:"，",py:''}],
+    [{ch:"最",py:'zuì'},{ch:"是",py:'shì'},{ch:"橙",py:'chéng'},{ch:"黄",py:'huáng'},{ch:"橘",py:'jú'},{ch:"绿",py:'lǜ'},{ch:"时",py:'shí'},{ch:"。",py:''}]
+  ], text: "荷尽已无擎雨盖，菊残犹有傲霜枝。一年好景君须记，最是橙黄橘绿时。" },
+  { title: "画鸡", author: "唐寅", genre: "咏物", lines: [
+    [{ch:"头",py:'tóu'},{ch:"上",py:'shàng'},{ch:"红",py:'hóng'},{ch:"冠",py:'guān'},{ch:"不",py:'bù'},{ch:"用",py:'yòng'},{ch:"裁",py:'cái'},{ch:"，",py:''}],
+    [{ch:"满",py:'mǎn'},{ch:"身",py:'shēn'},{ch:"雪",py:'xuě'},{ch:"白",py:'bái'},{ch:"走",py:'zǒu'},{ch:"将",py:'jiāng'},{ch:"来",py:'lái'},{ch:"。",py:''}],
+    [{ch:"平",py:'píng'},{ch:"生",py:'shēng'},{ch:"不",py:'bù'},{ch:"敢",py:'gǎn'},{ch:"轻",py:'qīng'},{ch:"言",py:'yán'},{ch:"语",py:'yǔ'},{ch:"，",py:''}],
+    [{ch:"一",py:'yī'},{ch:"叫",py:'jiào'},{ch:"千",py:'qiān'},{ch:"门",py:'mén'},{ch:"万",py:'wàn'},{ch:"户",py:'hù'},{ch:"开",py:'kāi'},{ch:"。",py:''}]
+  ], text: "头上红冠不用裁，满身雪白走将来。平生不敢轻言语，一叫千门万户开。" },
+  { title: "书湖阴先生壁", author: "王安石", genre: "写景", lines: [
+    [{ch:"茅",py:'máo'},{ch:"檐",py:'yán'},{ch:"长",py:'zhǎng'},{ch:"扫",py:'sǎo'},{ch:"净",py:'jìng'},{ch:"无",py:'wú'},{ch:"苔",py:'tái'},{ch:"，",py:''}],
+    [{ch:"花",py:'huā'},{ch:"木",py:'mù'},{ch:"成",py:'chéng'},{ch:"畦",py:'qí'},{ch:"手",py:'shǒu'},{ch:"自",py:'zì'},{ch:"栽",py:'zāi'},{ch:"。",py:''}],
+    [{ch:"一",py:'yī'},{ch:"水",py:'shuǐ'},{ch:"护",py:'hù'},{ch:"田",py:'tián'},{ch:"将",py:'jiāng'},{ch:"绿",py:'lǜ'},{ch:"绕",py:'rào'},{ch:"，",py:''}],
+    [{ch:"两",py:'liǎng'},{ch:"山",py:'shān'},{ch:"排",py:'pái'},{ch:"闼",py:'tà'},{ch:"送",py:'sòng'},{ch:"青",py:'qīng'},{ch:"来",py:'lái'},{ch:"。",py:''}]
+  ], text: "茅檐长扫净无苔，花木成畦手自栽。一水护田将绿绕，两山排闼送青来。" },
+  { title: "从军行", author: "王昌龄", genre: "边塞", lines: [
+    [{ch:"青",py:'qīng'},{ch:"海",py:'hǎi'},{ch:"长",py:'zhǎng'},{ch:"云",py:'yún'},{ch:"暗",py:'àn'},{ch:"雪",py:'xuě'},{ch:"山",py:'shān'},{ch:"，",py:''}],
+    [{ch:"孤",py:'gū'},{ch:"城",py:'chéng'},{ch:"遥",py:'yáo'},{ch:"望",py:'wàng'},{ch:"玉",py:'yù'},{ch:"门",py:'mén'},{ch:"关",py:'guān'},{ch:"。",py:''}],
+    [{ch:"黄",py:'huáng'},{ch:"沙",py:'shā'},{ch:"百",py:'bǎi'},{ch:"战",py:'zhàn'},{ch:"穿",py:'chuān'},{ch:"金",py:'jīn'},{ch:"甲",py:'jiǎ'},{ch:"，",py:''}],
+    [{ch:"不",py:'bù'},{ch:"破",py:'pò'},{ch:"楼",py:'lóu'},{ch:"兰",py:'lán'},{ch:"终",py:'zhōng'},{ch:"不",py:'bù'},{ch:"还",py:'huán'},{ch:"。",py:''}]
+  ], text: "青海长云暗雪山，孤城遥望玉门关。黄沙百战穿金甲，不破楼兰终不还。" },
+  { title: "凉州词", author: "王之涣", genre: "边塞", lines: [
+    [{ch:"黄",py:'huáng'},{ch:"河",py:'hé'},{ch:"远",py:'yuǎn'},{ch:"上",py:'shàng'},{ch:"白",py:'bái'},{ch:"云",py:'yún'},{ch:"间",py:'jiān'},{ch:"，",py:''}],
+    [{ch:"一",py:'yī'},{ch:"片",py:'piàn'},{ch:"孤",py:'gū'},{ch:"城",py:'chéng'},{ch:"万",py:'wàn'},{ch:"仞",py:'rèn'},{ch:"山",py:'shān'},{ch:"。",py:''}],
+    [{ch:"羌",py:'qiāng'},{ch:"笛",py:'dí'},{ch:"何",py:'hé'},{ch:"须",py:'xū'},{ch:"怨",py:'yuàn'},{ch:"杨",py:'yáng'},{ch:"柳",py:'liǔ'},{ch:"，",py:''}],
+    [{ch:"春",py:'chūn'},{ch:"风",py:'fēng'},{ch:"不",py:'bù'},{ch:"度",py:'dù'},{ch:"玉",py:'yù'},{ch:"门",py:'mén'},{ch:"关",py:'guān'},{ch:"。",py:''}]
+  ], text: "黄河远上白云间，一片孤城万仞山。羌笛何须怨杨柳，春风不度玉门关。" },
+  { title: "凉州词", author: "王翰", genre: "边塞", lines: [
+    [{ch:"葡",py:'pú'},{ch:"萄",py:'táo'},{ch:"美",py:'měi'},{ch:"酒",py:'jiǔ'},{ch:"夜",py:'yè'},{ch:"光",py:'guāng'},{ch:"杯",py:'bēi'},{ch:"，",py:''}],
+    [{ch:"欲",py:'yù'},{ch:"饮",py:'yǐn'},{ch:"琵",py:'pí'},{ch:"琶",py:'pá'},{ch:"马",py:'mǎ'},{ch:"上",py:'shàng'},{ch:"催",py:'cuī'},{ch:"。",py:''}],
+    [{ch:"醉",py:'zuì'},{ch:"卧",py:'wò'},{ch:"沙",py:'shā'},{ch:"场",py:'chǎng'},{ch:"君",py:'jūn'},{ch:"莫",py:'mò'},{ch:"笑",py:'xiào'},{ch:"，",py:''}],
+    [{ch:"古",py:'gǔ'},{ch:"来",py:'lái'},{ch:"征",py:'zhēng'},{ch:"战",py:'zhàn'},{ch:"几",py:'jǐ'},{ch:"人",py:'rén'},{ch:"回",py:'huí'},{ch:"？",py:''}]
+  ], text: "葡萄美酒夜光杯，欲饮琵琶马上催。醉卧沙场君莫笑，古来征战几人回？" },
+  { title: "十五夜望月寄杜郎中", author: "王建", genre: "思乡", lines: [
+    [{ch:"中",py:'zhōng'},{ch:"庭",py:'tíng'},{ch:"地",py:'dì'},{ch:"白",py:'bái'},{ch:"树",py:'shù'},{ch:"栖",py:'qī'},{ch:"鸦",py:'yā'},{ch:"，",py:''}],
+    [{ch:"冷",py:'lěng'},{ch:"露",py:'lù'},{ch:"无",py:'wú'},{ch:"声",py:'shēng'},{ch:"湿",py:'shī'},{ch:"桂",py:'guì'},{ch:"花",py:'huā'},{ch:"。",py:''}],
+    [{ch:"今",py:'jīn'},{ch:"夜",py:'yè'},{ch:"月",py:'yuè'},{ch:"明",py:'míng'},{ch:"人",py:'rén'},{ch:"尽",py:'jǐn'},{ch:"望",py:'wàng'},{ch:"，",py:''}],
+    [{ch:"不",py:'bù'},{ch:"知",py:'zhī'},{ch:"秋",py:'qiū'},{ch:"思",py:'sī'},{ch:"落",py:'luò'},{ch:"谁",py:'shuí'},{ch:"家",py:'jiā'},{ch:"。",py:''}]
+  ], text: "中庭地白树栖鸦，冷露无声湿桂花。今夜月明人尽望，不知秋思落谁家。" },
+  { title: "卜算子·送鲍浩然之浙东", author: "王观", genre: "送别", lines: [
+    [{ch:"水",py:'shuǐ'},{ch:"是",py:'shì'},{ch:"眼",py:'yǎn'},{ch:"波",py:'bō'},{ch:"横",py:'héng'},{ch:"，",py:''}],
+    [{ch:"山",py:'shān'},{ch:"是",py:'shì'},{ch:"眉",py:'méi'},{ch:"峰",py:'fēng'},{ch:"聚",py:'jù'},{ch:"。",py:''}],
+    [{ch:"欲",py:'yù'},{ch:"问",py:'wèn'},{ch:"行",py:'xíng'},{ch:"人",py:'rén'},{ch:"去",py:'qù'},{ch:"那",py:'nà'},{ch:"边",py:'biān'},{ch:"？",py:''}],
+    [{ch:"眉",py:'méi'},{ch:"眼",py:'yǎn'},{ch:"盈",py:'yíng'},{ch:"盈",py:'yíng'},{ch:"处",py:'chù'},{ch:"。",py:''}],
+    [{ch:"才",py:'cái'},{ch:"始",py:'shǐ'},{ch:"送",py:'sòng'},{ch:"春",py:'chūn'},{ch:"归",py:'guī'},{ch:"，",py:''}],
+    [{ch:"又",py:'yòu'},{ch:"送",py:'sòng'},{ch:"君",py:'jūn'},{ch:"归",py:'guī'},{ch:"去",py:'qù'},{ch:"。",py:''}],
+    [{ch:"若",py:'ruò'},{ch:"到",py:'dào'},{ch:"江",py:'jiāng'},{ch:"南",py:'nán'},{ch:"赶",py:'gǎn'},{ch:"上",py:'shàng'},{ch:"春",py:'chūn'},{ch:"，",py:''}],
+    [{ch:"千",py:'qiān'},{ch:"万",py:'wàn'},{ch:"和",py:'hé'},{ch:"春",py:'chūn'},{ch:"住",py:'zhù'},{ch:"。",py:''}]
+  ], text: "水是眼波横，山是眉峰聚。欲问行人去那边？眉眼盈盈处。才始送春归，又送君归去。若到江南赶上春，千万和春住。" },
+  { title: "墨梅", author: "王冕", genre: "咏物", lines: [
+    [{ch:"我",py:'wǒ'},{ch:"家",py:'jiā'},{ch:"洗",py:'xǐ'},{ch:"砚",py:'yàn'},{ch:"池",py:'chí'},{ch:"头",py:'tóu'},{ch:"树",py:'shù'},{ch:"，",py:''}],
+    [{ch:"朵",py:'duǒ'},{ch:"朵",py:'duǒ'},{ch:"花",py:'huā'},{ch:"开",py:'kāi'},{ch:"淡",py:'dàn'},{ch:"墨",py:'mò'},{ch:"痕",py:'hén'},{ch:"。",py:''}],
+    [{ch:"不",py:'bú'},{ch:"要",py:'yào'},{ch:"人",py:'rén'},{ch:"夸",py:'kuā'},{ch:"好",py:'hǎo'},{ch:"颜",py:'yán'},{ch:"色",py:'sè'},{ch:"，",py:''}],
+    [{ch:"只",py:'zhǐ'},{ch:"留",py:'liú'},{ch:"清",py:'qīng'},{ch:"气",py:'qì'},{ch:"满",py:'mǎn'},{ch:"乾",py:'qián'},{ch:"坤",py:'kūn'},{ch:"。",py:''}]
+  ], text: "我家洗砚池头树，朵朵花开淡墨痕。不要人夸好颜色，只留清气满乾坤。" },
+  { title: "朝天子·咏喇叭", author: "王磐", genre: "感慨", lines: [
+    [{ch:"喇",py:'lǎ'},{ch:"叭",py:'bā'},{ch:"，",py:''}],
+    [{ch:"唢",py:'suǒ'},{ch:"呐",py:'nà'},{ch:"，",py:''}],
+    [{ch:"曲",py:'qū'},{ch:"儿",py:'ér'},{ch:"小",py:'xiǎo'},{ch:"腔",py:'qiāng'},{ch:"儿",py:'ér'},{ch:"大",py:'dà'},{ch:"。",py:''}],
+    [{ch:"官",py:'guān'},{ch:"船",py:'chuán'},{ch:"来",py:'lái'},{ch:"往",py:'wǎng'},{ch:"乱",py:'luàn'},{ch:"如",py:'rú'},{ch:"麻",py:'má'},{ch:"，",py:''}],
+    [{ch:"全",py:'quán'},{ch:"仗",py:'zhàng'},{ch:"你",py:'nǐ'},{ch:"抬",py:'tái'},{ch:"声",py:'shēng'},{ch:"价",py:'jià'},{ch:"。",py:''}],
+    [{ch:"军",py:'jūn'},{ch:"听",py:'tīng'},{ch:"了",py:'le'},{ch:"军",py:'jūn'},{ch:"愁",py:'chóu'},{ch:"，",py:''}],
+    [{ch:"民",py:'mín'},{ch:"听",py:'tīng'},{ch:"了",py:'le'},{ch:"民",py:'mín'},{ch:"怕",py:'pà'},{ch:"。",py:''}],
+    [{ch:"哪",py:'nǎ'},{ch:"里",py:'lǐ'},{ch:"去",py:'qù'},{ch:"辨",py:'biàn'},{ch:"甚",py:'shén'},{ch:"么",py:'me'},{ch:"真",py:'zhēn'},{ch:"共",py:'gòng'},{ch:"假",py:'jiǎ'},{ch:"？",py:''}],
+    [{ch:"眼",py:'yǎn'},{ch:"见",py:'jiàn'},{ch:"的",py:'de'},{ch:"吹",py:'chuī'},{ch:"翻",py:'fān'},{ch:"了",py:'le'},{ch:"这",py:'zhè'},{ch:"家",py:'jiā'},{ch:"，",py:''}],
+    [{ch:"吹",py:'chuī'},{ch:"伤",py:'shāng'},{ch:"了",py:'le'},{ch:"那",py:'nà'},{ch:"家",py:'jiā'},{ch:"，",py:''}],
+    [{ch:"只",py:'zhǐ'},{ch:"吹",py:'chuī'},{ch:"的",py:'de'},{ch:"水",py:'shuǐ'},{ch:"尽",py:'jìn'},{ch:"鹅",py:'é'},{ch:"飞",py:'fēi'},{ch:"罢",py:'bà'},{ch:"！",py:''}]
+  ], text: "喇叭，唢呐，曲儿小腔儿大。官船来往乱如麻，全仗你抬声价。军听了军愁，民听了民怕。哪里去辨甚么真共假？眼见的吹翻了这家，吹伤了那家，只吹的水尽鹅飞罢！" },
+  { title: "梅花", author: "王安石", genre: "咏物", lines: [
+    [{ch:"墙",py:'qiáng'},{ch:"角",py:'jiǎo'},{ch:"数",py:'shù'},{ch:"枝",py:'zhī'},{ch:"梅",py:'méi'},{ch:"，",py:''}],
+    [{ch:"凌",py:'líng'},{ch:"寒",py:'hán'},{ch:"独",py:'dú'},{ch:"自",py:'zì'},{ch:"开",py:'kāi'},{ch:"。",py:''}],
+    [{ch:"遥",py:'yáo'},{ch:"知",py:'zhī'},{ch:"不",py:'bú'},{ch:"是",py:'shì'},{ch:"雪",py:'xuě'},{ch:"，",py:''}],
+    [{ch:"为",py:'wèi'},{ch:"有",py:'yǒu'},{ch:"暗",py:'àn'},{ch:"香",py:'xiāng'},{ch:"来",py:'lái'},{ch:"。",py:''}]
+  ], text: "墙角数枝梅，凌寒独自开。遥知不是雪，为有暗香来。" },
+  { title: "商山早行", author: "温庭筠", genre: "思乡", lines: [
+    [{ch:"晨",py:'chén'},{ch:"起",py:'qǐ'},{ch:"动",py:'dòng'},{ch:"征",py:'zhēng'},{ch:"铎",py:'duó'},{ch:"，",py:''}],
+    [{ch:"客",py:'kè'},{ch:"行",py:'xíng'},{ch:"悲",py:'bēi'},{ch:"故",py:'gù'},{ch:"乡",py:'xiāng'},{ch:"。",py:''}],
+    [{ch:"鸡",py:'jī'},{ch:"声",py:'shēng'},{ch:"茅",py:'máo'},{ch:"店",py:'diàn'},{ch:"月",py:'yuè'},{ch:"，",py:''}],
+    [{ch:"人",py:'rén'},{ch:"迹",py:'jì'},{ch:"板",py:'bǎn'},{ch:"桥",py:'qiáo'},{ch:"霜",py:'shuāng'},{ch:"。",py:''}],
+    [{ch:"槲",py:'hú'},{ch:"叶",py:'yè'},{ch:"落",py:'luò'},{ch:"山",py:'shān'},{ch:"路",py:'lù'},{ch:"，",py:''}],
+    [{ch:"枳",py:'zhǐ'},{ch:"花",py:'huā'},{ch:"明",py:'míng'},{ch:"驿",py:'yì'},{ch:"墙",py:'qiáng'},{ch:"。",py:''}],
+    [{ch:"因",py:'yīn'},{ch:"思",py:'sī'},{ch:"杜",py:'dù'},{ch:"陵",py:'líng'},{ch:"梦",py:'mèng'},{ch:"，",py:''}],
+    [{ch:"凫",py:'fú'},{ch:"雁",py:'yàn'},{ch:"满",py:'mǎn'},{ch:"回",py:'huí'},{ch:"塘",py:'táng'},{ch:"。",py:''}]
+  ], text: "晨起动征铎，客行悲故乡。鸡声茅店月，人迹板桥霜。槲叶落山路，枳花明驿墙。因思杜陵梦，凫雁满回塘。" },
+  { title: "乡村四月", author: "翁卷", genre: "田园", lines: [
+    [{ch:"绿",py:'lǜ'},{ch:"遍",py:'biàn'},{ch:"山",py:'shān'},{ch:"原",py:'yuán'},{ch:"白",py:'bái'},{ch:"满",py:'mǎn'},{ch:"川",py:'chuān'},{ch:"，",py:''}],
+    [{ch:"子",py:'zi'},{ch:"规",py:'guī'},{ch:"声",py:'shēng'},{ch:"里",py:'lǐ'},{ch:"雨",py:'yǔ'},{ch:"如",py:'rú'},{ch:"烟",py:'yān'},{ch:"。",py:''}],
+    [{ch:"乡",py:'xiāng'},{ch:"村",py:'cūn'},{ch:"四",py:'sì'},{ch:"月",py:'yuè'},{ch:"闲",py:'xián'},{ch:"人",py:'rén'},{ch:"少",py:'shǎo'},{ch:"，",py:''}],
+    [{ch:"才",py:'cái'},{ch:"了",py:'liǎo'},{ch:"蚕",py:'cán'},{ch:"桑",py:'sāng'},{ch:"又",py:'yòu'},{ch:"插",py:'chā'},{ch:"田",py:'tián'},{ch:"。",py:''}]
+  ], text: "绿遍山原白满川，子规声里雨如烟。乡村四月闲人少，才了蚕桑又插田。" },
+  { title: "清平乐·村居", author: "辛弃疾", genre: "田园", lines: [
+    [{ch:"茅",py:'máo'},{ch:"檐",py:'yán'},{ch:"低",py:'dī'},{ch:"小",py:'xiǎo'},{ch:"，",py:''}],
+    [{ch:"溪",py:'xī'},{ch:"上",py:'shàng'},{ch:"青",py:'qīng'},{ch:"青",py:'qīng'},{ch:"草",py:'cǎo'},{ch:"。",py:''}],
+    [{ch:"醉",py:'zuì'},{ch:"里",py:'lǐ'},{ch:"吴",py:'wú'},{ch:"音",py:'yīn'},{ch:"相",py:'xiāng'},{ch:"媚",py:'mèi'},{ch:"好",py:'hǎo'},{ch:"，",py:''}],
+    [{ch:"白",py:'bái'},{ch:"发",py:'fà'},{ch:"谁",py:'shuí'},{ch:"家",py:'jiā'},{ch:"翁",py:'wēng'},{ch:"媪",py:'ǎo'},{ch:"？",py:''}],
+    [{ch:"大",py:'dà'},{ch:"儿",py:'ér'},{ch:"锄",py:'chú'},{ch:"豆",py:'dòu'},{ch:"溪",py:'xī'},{ch:"东",py:'dōng'},{ch:"，",py:''}],
+    [{ch:"中",py:'zhōng'},{ch:"儿",py:'ér'},{ch:"正",py:'zhèng'},{ch:"织",py:'zhī'},{ch:"鸡",py:'jī'},{ch:"笼",py:'lóng'},{ch:"。",py:''}],
+    [{ch:"最",py:'zuì'},{ch:"喜",py:'xǐ'},{ch:"小",py:'xiǎo'},{ch:"儿",py:'ér'},{ch:"无",py:'wú'},{ch:"赖",py:'lài'},{ch:"，",py:''}],
+    [{ch:"溪",py:'xī'},{ch:"头",py:'tóu'},{ch:"卧",py:'wò'},{ch:"剥",py:'bō'},{ch:"莲",py:'lián'},{ch:"蓬",py:'péng'},{ch:"。",py:''}]
+  ], text: "茅檐低小，溪上青青草。醉里吴音相媚好，白发谁家翁媪？大儿锄豆溪东，中儿正织鸡笼。最喜小儿无赖，溪头卧剥莲蓬。" },
+  { title: "菩萨蛮·书江西造口壁", author: "辛弃疾", genre: "爱国", lines: [
+    [{ch:"郁",py:'yù'},{ch:"孤",py:'gū'},{ch:"台",py:'tái'},{ch:"下",py:'xià'},{ch:"清",py:'qīng'},{ch:"江",py:'jiāng'},{ch:"水",py:'shuǐ'},{ch:"，",py:''}],
+    [{ch:"中",py:'zhōng'},{ch:"间",py:'jiān'},{ch:"多",py:'duō'},{ch:"少",py:'shǎo'},{ch:"行",py:'xíng'},{ch:"人",py:'rén'},{ch:"泪",py:'lèi'},{ch:"。",py:''}],
+    [{ch:"西",py:'xī'},{ch:"北",py:'běi'},{ch:"望",py:'wàng'},{ch:"长",py:'cháng'},{ch:"安",py:'ān'},{ch:"，",py:''}],
+    [{ch:"可",py:'kě'},{ch:"怜",py:'lián'},{ch:"无",py:'wú'},{ch:"数",py:'shù'},{ch:"山",py:'shān'},{ch:"。",py:''}],
+    [{ch:"青",py:'qīng'},{ch:"山",py:'shān'},{ch:"遮",py:'zhē'},{ch:"不",py:'bú'},{ch:"住",py:'zhù'},{ch:"，",py:''}],
+    [{ch:"毕",py:'bì'},{ch:"竟",py:'jìng'},{ch:"东",py:'dōng'},{ch:"流",py:'liú'},{ch:"去",py:'qù'},{ch:"。",py:''}],
+    [{ch:"江",py:'jiāng'},{ch:"晚",py:'wǎn'},{ch:"正",py:'zhèng'},{ch:"愁",py:'chóu'},{ch:"余",py:'yú'},{ch:"，",py:''}],
+    [{ch:"山",py:'shān'},{ch:"深",py:'shēn'},{ch:"闻",py:'wén'},{ch:"鹧",py:'zhè'},{ch:"鸪",py:'gū'},{ch:"。",py:''}]
+  ], text: "郁孤台下清江水，中间多少行人泪。西北望长安，可怜无数山。青山遮不住，毕竟东流去。江晚正愁余，山深闻鹧鸪。" },
+  { title: "西江月·夜行黄沙道中", author: "辛弃疾", genre: "田园", lines: [
+    [{ch:"明",py:'míng'},{ch:"月",py:'yuè'},{ch:"别",py:'bié'},{ch:"枝",py:'zhī'},{ch:"惊",py:'jīng'},{ch:"鹊",py:'què'},{ch:"，",py:''}],
+    [{ch:"清",py:'qīng'},{ch:"风",py:'fēng'},{ch:"半",py:'bàn'},{ch:"夜",py:'yè'},{ch:"鸣",py:'míng'},{ch:"蝉",py:'chán'},{ch:"。",py:''}],
+    [{ch:"稻",py:'dào'},{ch:"花",py:'huā'},{ch:"香",py:'xiāng'},{ch:"里",py:'lǐ'},{ch:"说",py:'shuō'},{ch:"丰",py:'fēng'},{ch:"年",py:'nián'},{ch:"，",py:''}],
+    [{ch:"听",py:'tīng'},{ch:"取",py:'qǔ'},{ch:"蛙",py:'wā'},{ch:"声",py:'shēng'},{ch:"一",py:'yī'},{ch:"片",py:'piàn'},{ch:"。",py:''}],
+    [{ch:"七",py:'qī'},{ch:"八",py:'bā'},{ch:"个",py:'gè'},{ch:"星",py:'xīng'},{ch:"天",py:'tiān'},{ch:"外",py:'wài'},{ch:"，",py:''}],
+    [{ch:"两",py:'liǎng'},{ch:"三",py:'sān'},{ch:"点",py:'diǎn'},{ch:"雨",py:'yǔ'},{ch:"山",py:'shān'},{ch:"前",py:'qián'},{ch:"。",py:''}],
+    [{ch:"旧",py:'jiù'},{ch:"时",py:'shí'},{ch:"茅",py:'máo'},{ch:"店",py:'diàn'},{ch:"社",py:'shè'},{ch:"林",py:'lín'},{ch:"边",py:'biān'},{ch:"，",py:''}],
+    [{ch:"路",py:'lù'},{ch:"转",py:'zhuǎn'},{ch:"溪",py:'xī'},{ch:"桥",py:'qiáo'},{ch:"忽",py:'hū'},{ch:"见",py:'jiàn'},{ch:"。",py:''}]
+  ], text: "明月别枝惊鹊，清风半夜鸣蝉。稻花香里说丰年，听取蛙声一片。七八个星天外，两三点雨山前。旧时茅店社林边，路转溪桥忽见。" },
+  { title: "宿新市徐公店", author: "杨万里", genre: "童趣", lines: [
+    [{ch:"篱",py:'lí'},{ch:"落",py:'luò'},{ch:"疏",py:'shū'},{ch:"疏",py:'shū'},{ch:"一",py:'yī'},{ch:"径",py:'jìng'},{ch:"深",py:'shēn'},{ch:"，",py:''}],
+    [{ch:"树",py:'shù'},{ch:"头",py:'tóu'},{ch:"新",py:'xīn'},{ch:"绿",py:'lǜ'},{ch:"未",py:'wèi'},{ch:"成",py:'chéng'},{ch:"阴",py:'yīn'},{ch:"。",py:''}],
+    [{ch:"儿",py:'ér'},{ch:"童",py:'tóng'},{ch:"急",py:'jí'},{ch:"走",py:'zǒu'},{ch:"追",py:'zhuī'},{ch:"黄",py:'huáng'},{ch:"蝶",py:'dié'},{ch:"，",py:''}],
+    [{ch:"飞",py:'fēi'},{ch:"入",py:'rù'},{ch:"菜",py:'cài'},{ch:"花",py:'huā'},{ch:"无",py:'wú'},{ch:"处",py:'chǔ'},{ch:"寻",py:'xún'},{ch:"。",py:''}]
+  ], text: "篱落疏疏一径深，树头新绿未成阴。儿童急走追黄蝶，飞入菜花无处寻。" },
+  { title: "小池", author: "杨万里", genre: "写景", lines: [
+    [{ch:"泉",py:'quán'},{ch:"眼",py:'yǎn'},{ch:"无",py:'wú'},{ch:"声",py:'shēng'},{ch:"惜",py:'xī'},{ch:"细",py:'xì'},{ch:"流",py:'liú'},{ch:"，",py:''}],
+    [{ch:"树",py:'shù'},{ch:"阴",py:'yīn'},{ch:"照",py:'zhào'},{ch:"水",py:'shuǐ'},{ch:"爱",py:'ài'},{ch:"晴",py:'qíng'},{ch:"柔",py:'róu'},{ch:"。",py:''}],
+    [{ch:"小",py:'xiǎo'},{ch:"荷",py:'hé'},{ch:"才",py:'cái'},{ch:"露",py:'lù'},{ch:"尖",py:'jiān'},{ch:"尖",py:'jiān'},{ch:"角",py:'jiǎo'},{ch:"，",py:''}],
+    [{ch:"早",py:'zǎo'},{ch:"有",py:'yǒu'},{ch:"蜻",py:'qīng'},{ch:"蜓",py:'tíng'},{ch:"立",py:'lì'},{ch:"上",py:'shàng'},{ch:"头",py:'tou'},{ch:"。",py:''}]
+  ], text: "泉眼无声惜细流，树阴照水爱晴柔。小荷才露尖尖角，早有蜻蜓立上头。" },
+  { title: "晓出净慈寺送林子方", author: "杨万里", genre: "写景", lines: [
+    [{ch:"毕",py:'bì'},{ch:"竟",py:'jìng'},{ch:"西",py:'xī'},{ch:"湖",py:'hú'},{ch:"六",py:'liù'},{ch:"月",py:'yuè'},{ch:"中",py:'zhōng'},{ch:"，",py:''}],
+    [{ch:"风",py:'fēng'},{ch:"光",py:'guāng'},{ch:"不",py:'bù'},{ch:"与",py:'yǔ'},{ch:"四",py:'sì'},{ch:"时",py:'shí'},{ch:"同",py:'tóng'},{ch:"。",py:''}],
+    [{ch:"接",py:'jiē'},{ch:"天",py:'tiān'},{ch:"莲",py:'lián'},{ch:"叶",py:'yè'},{ch:"无",py:'wú'},{ch:"穷",py:'qióng'},{ch:"碧",py:'bì'},{ch:"，",py:''}],
+    [{ch:"映",py:'yìng'},{ch:"日",py:'rì'},{ch:"荷",py:'hé'},{ch:"花",py:'huā'},{ch:"别",py:'bié'},{ch:"样",py:'yàng'},{ch:"红",py:'hóng'},{ch:"。",py:''}]
+  ], text: "毕竟西湖六月中，风光不与四时同。接天莲叶无穷碧，映日荷花别样红。" },
+  { title: "稚子弄冰", author: "杨万里", genre: "童趣", lines: [
+    [{ch:"稚",py:'zhì'},{ch:"子",py:'zi'},{ch:"金",py:'jīn'},{ch:"盆",py:'pén'},{ch:"脱",py:'tuō'},{ch:"晓",py:'xiǎo'},{ch:"冰",py:'bīng'},{ch:"，",py:''}],
+    [{ch:"彩",py:'cǎi'},{ch:"丝",py:'sī'},{ch:"穿",py:'chuān'},{ch:"取",py:'qǔ'},{ch:"当",py:'dāng'},{ch:"银",py:'yín'},{ch:"钲",py:'zhēng'},{ch:"。",py:''}],
+    [{ch:"敲",py:'qiāo'},{ch:"成",py:'chéng'},{ch:"玉",py:'yù'},{ch:"磬",py:'qìng'},{ch:"穿",py:'chuān'},{ch:"林",py:'lín'},{ch:"响",py:'xiǎng'},{ch:"，",py:''}],
+    [{ch:"忽",py:'hū'},{ch:"作",py:'zuò'},{ch:"玻",py:'bō'},{ch:"璃",py:'lí'},{ch:"碎",py:'suì'},{ch:"地",py:'dì'},{ch:"声",py:'shēng'},{ch:"。",py:''}]
+  ], text: "稚子金盆脱晓冰，彩丝穿取当银钲。敲成玉磬穿林响，忽作玻璃碎地声。" },
+  { title: "舟过安仁", author: "杨万里", genre: "童趣", lines: [
+    [{ch:"一",py:'yī'},{ch:"叶",py:'yè'},{ch:"渔",py:'yú'},{ch:"船",py:'chuán'},{ch:"两",py:'liǎng'},{ch:"小",py:'xiǎo'},{ch:"童",py:'tóng'},{ch:"，",py:''}],
+    [{ch:"收",py:'shōu'},{ch:"篙",py:'gāo'},{ch:"停",py:'tíng'},{ch:"棹",py:'zhào'},{ch:"坐",py:'zuò'},{ch:"船",py:'chuán'},{ch:"中",py:'zhōng'},{ch:"。",py:''}],
+    [{ch:"怪",py:'guài'},{ch:"生",py:'shēng'},{ch:"无",py:'wú'},{ch:"雨",py:'yǔ'},{ch:"都",py:'dōu'},{ch:"张",py:'zhāng'},{ch:"伞",py:'sǎn'},{ch:"，",py:''}],
+    [{ch:"不",py:'bú'},{ch:"是",py:'shì'},{ch:"遮",py:'zhē'},{ch:"头",py:'tóu'},{ch:"是",py:'shì'},{ch:"使",py:'shǐ'},{ch:"风",py:'fēng'},{ch:"。",py:''}]
+  ], text: "一叶渔船两小童，收篙停棹坐船中。怪生无雨都张伞，不是遮头是使风。" },
+  { title: "夜书所见", author: "叶绍翁", genre: "思乡", lines: [
+    [{ch:"萧",py:'xiāo'},{ch:"萧",py:'xiāo'},{ch:"梧",py:'wú'},{ch:"叶",py:'yè'},{ch:"送",py:'sòng'},{ch:"寒",py:'hán'},{ch:"声",py:'shēng'},{ch:"，",py:''}],
+    [{ch:"江",py:'jiāng'},{ch:"上",py:'shàng'},{ch:"秋",py:'qiū'},{ch:"风",py:'fēng'},{ch:"动",py:'dòng'},{ch:"客",py:'kè'},{ch:"情",py:'qíng'},{ch:"。",py:''}],
+    [{ch:"知",py:'zhī'},{ch:"有",py:'yǒu'},{ch:"儿",py:'ér'},{ch:"童",py:'tóng'},{ch:"挑",py:'tiǎo'},{ch:"促",py:'cù'},{ch:"织",py:'zhī'},{ch:"，",py:''}],
+    [{ch:"夜",py:'yè'},{ch:"深",py:'shēn'},{ch:"篱",py:'lí'},{ch:"落",py:'luò'},{ch:"一",py:'yī'},{ch:"灯",py:'dēng'},{ch:"明",py:'míng'},{ch:"。",py:''}]
+  ], text: "萧萧梧叶送寒声，江上秋风动客情。知有儿童挑促织，夜深篱落一灯明。" },
+  { title: "游园不值", author: "叶绍翁", genre: "写景", lines: [
+    [{ch:"应",py:'yīng'},{ch:"怜",py:'lián'},{ch:"屐",py:'jī'},{ch:"齿",py:'chǐ'},{ch:"印",py:'yìn'},{ch:"苍",py:'cāng'},{ch:"苔",py:'tái'},{ch:"，",py:''}],
+    [{ch:"小",py:'xiǎo'},{ch:"扣",py:'kòu'},{ch:"柴",py:'chái'},{ch:"扉",py:'fēi'},{ch:"久",py:'jiǔ'},{ch:"不",py:'bù'},{ch:"开",py:'kāi'},{ch:"。",py:''}],
+    [{ch:"春",py:'chūn'},{ch:"色",py:'sè'},{ch:"满",py:'mǎn'},{ch:"园",py:'yuán'},{ch:"关",py:'guān'},{ch:"不",py:'bú'},{ch:"住",py:'zhù'},{ch:"，",py:''}],
+    [{ch:"一",py:'yī'},{ch:"枝",py:'zhī'},{ch:"红",py:'hóng'},{ch:"杏",py:'xìng'},{ch:"出",py:'chū'},{ch:"墙",py:'qiáng'},{ch:"来",py:'lái'},{ch:"。",py:''}]
+  ], text: "应怜屐齿印苍苔，小扣柴扉久不开。春色满园关不住，一枝红杏出墙来。" },
+  { title: "迢迢牵牛星", author: "佚名", genre: "思乡", lines: [
+    [{ch:"迢",py:'tiáo'},{ch:"迢",py:'tiáo'},{ch:"牵",py:'qiān'},{ch:"牛",py:'niú'},{ch:"星",py:'xīng'},{ch:"，",py:''}],
+    [{ch:"皎",py:'jiǎo'},{ch:"皎",py:'jiǎo'},{ch:"河",py:'hé'},{ch:"汉",py:'hàn'},{ch:"女",py:'nǚ'},{ch:"。",py:''}],
+    [{ch:"纤",py:'xiān'},{ch:"纤",py:'xiān'},{ch:"擢",py:'zhuó'},{ch:"素",py:'sù'},{ch:"手",py:'shǒu'},{ch:"，",py:''}],
+    [{ch:"札",py:'zhá'},{ch:"札",py:'zhá'},{ch:"弄",py:'nòng'},{ch:"机",py:'jī'},{ch:"杼",py:'zhù'},{ch:"。",py:''}],
+    [{ch:"终",py:'zhōng'},{ch:"日",py:'rì'},{ch:"不",py:'bù'},{ch:"成",py:'chéng'},{ch:"章",py:'zhāng'},{ch:"，",py:''}],
+    [{ch:"泣",py:'qì'},{ch:"涕",py:'tì'},{ch:"零",py:'líng'},{ch:"如",py:'rú'},{ch:"雨",py:'yǔ'},{ch:"。",py:''}],
+    [{ch:"河",py:'hé'},{ch:"汉",py:'hàn'},{ch:"清",py:'qīng'},{ch:"且",py:'qiě'},{ch:"浅",py:'qiǎn'},{ch:"，",py:''}],
+    [{ch:"相",py:'xiāng'},{ch:"去",py:'qù'},{ch:"复",py:'fù'},{ch:"几",py:'jǐ'},{ch:"许",py:'xǔ'},{ch:"？",py:''}],
+    [{ch:"盈",py:'yíng'},{ch:"盈",py:'yíng'},{ch:"一",py:'yī'},{ch:"水",py:'shuǐ'},{ch:"间",py:'jiān'},{ch:"，",py:''}],
+    [{ch:"脉",py:'mò'},{ch:"脉",py:'mò'},{ch:"不",py:'bù'},{ch:"得",py:'dé'},{ch:"语",py:'yǔ'},{ch:"。",py:''}]
+  ], text: "迢迢牵牛星，皎皎河汉女。纤纤擢素手，札札弄机杼。终日不成章，泣涕零如雨。河汉清且浅，相去复几许？盈盈一水间，脉脉不得语。" },
+  { title: "石灰吟", author: "于谦", genre: "咏物", lines: [
+    [{ch:"千",py:'qiān'},{ch:"锤",py:'chuí'},{ch:"万",py:'wàn'},{ch:"凿",py:'záo'},{ch:"出",py:'chū'},{ch:"深",py:'shēn'},{ch:"山",py:'shān'},{ch:"，",py:''}],
+    [{ch:"烈",py:'liè'},{ch:"火",py:'huǒ'},{ch:"焚",py:'fén'},{ch:"烧",py:'shāo'},{ch:"若",py:'ruò'},{ch:"等",py:'děng'},{ch:"闲",py:'xián'},{ch:"。",py:''}],
+    [{ch:"粉",py:'fěn'},{ch:"骨",py:'gǔ'},{ch:"碎",py:'suì'},{ch:"身",py:'shēn'},{ch:"浑",py:'hún'},{ch:"不",py:'bù'},{ch:"怕",py:'pà'},{ch:"，",py:''}],
+    [{ch:"要",py:'yào'},{ch:"留",py:'liú'},{ch:"清",py:'qīng'},{ch:"白",py:'bái'},{ch:"在",py:'zài'},{ch:"人",py:'rén'},{ch:"间",py:'jiān'},{ch:"。",py:''}]
+  ], text: "千锤万凿出深山，烈火焚烧若等闲。粉骨碎身浑不怕，要留清白在人间。" },
+  { title: "所见", author: "袁枚", genre: "童趣", lines: [
+    [{ch:"牧",py:'mù'},{ch:"童",py:'tóng'},{ch:"骑",py:'qí'},{ch:"黄",py:'huáng'},{ch:"牛",py:'niú'},{ch:"，",py:''}],
+    [{ch:"歌",py:'gē'},{ch:"声",py:'shēng'},{ch:"振",py:'zhèn'},{ch:"林",py:'lín'},{ch:"樾",py:'yuè'},{ch:"。",py:''}],
+    [{ch:"意",py:'yì'},{ch:"欲",py:'yù'},{ch:"捕",py:'bǔ'},{ch:"鸣",py:'míng'},{ch:"蝉",py:'chán'},{ch:"，",py:''}],
+    [{ch:"忽",py:'hū'},{ch:"然",py:'rán'},{ch:"闭",py:'bì'},{ch:"口",py:'kǒu'},{ch:"立",py:'lì'},{ch:"。",py:''}]
+  ], text: "牧童骑黄牛，歌声振林樾。意欲捕鸣蝉，忽然闭口立。" },
+  { title: "竹石", author: "郑燮", genre: "咏物", lines: [
+    [{ch:"咬",py:'yǎo'},{ch:"定",py:'dìng'},{ch:"青",py:'qīng'},{ch:"山",py:'shān'},{ch:"不",py:'bù'},{ch:"放",py:'fàng'},{ch:"松",py:'sōng'},{ch:"，",py:''}],
+    [{ch:"立",py:'lì'},{ch:"根",py:'gēn'},{ch:"原",py:'yuán'},{ch:"在",py:'zài'},{ch:"破",py:'pò'},{ch:"岩",py:'yán'},{ch:"中",py:'zhōng'},{ch:"。",py:''}],
+    [{ch:"千",py:'qiān'},{ch:"磨",py:'mó'},{ch:"万",py:'wàn'},{ch:"击",py:'jī'},{ch:"还",py:'hái'},{ch:"坚",py:'jiān'},{ch:"劲",py:'jìn'},{ch:"，",py:''}],
+    [{ch:"任",py:'rèn'},{ch:"尔",py:'ěr'},{ch:"东",py:'dōng'},{ch:"西",py:'xī'},{ch:"南",py:'nán'},{ch:"北",py:'běi'},{ch:"风",py:'fēng'},{ch:"。",py:''}]
+  ], text: "咬定青山不放松，立根原在破岩中。千磨万击还坚劲，任尔东西南北风。" },
+  { title: "春日", author: "朱熹", genre: "写景", lines: [
+    [{ch:"胜",py:'shèng'},{ch:"日",py:'rì'},{ch:"寻",py:'xún'},{ch:"芳",py:'fāng'},{ch:"泗",py:'sì'},{ch:"水",py:'shuǐ'},{ch:"滨",py:'bīn'},{ch:"，",py:''}],
+    [{ch:"无",py:'wú'},{ch:"边",py:'biān'},{ch:"光",py:'guāng'},{ch:"景",py:'jǐng'},{ch:"一",py:'yī'},{ch:"时",py:'shí'},{ch:"新",py:'xīn'},{ch:"。",py:''}],
+    [{ch:"等",py:'děng'},{ch:"闲",py:'xián'},{ch:"识",py:'shí'},{ch:"得",py:'dé'},{ch:"东",py:'dōng'},{ch:"风",py:'fēng'},{ch:"面",py:'miàn'},{ch:"，",py:''}],
+    [{ch:"万",py:'wàn'},{ch:"紫",py:'zǐ'},{ch:"千",py:'qiān'},{ch:"红",py:'hóng'},{ch:"总",py:'zǒng'},{ch:"是",py:'shì'},{ch:"春",py:'chūn'},{ch:"。",py:''}]
+  ], text: "胜日寻芳泗水滨，无边光景一时新。等闲识得东风面，万紫千红总是春。" },
+  { title: "观书有感", author: "朱熹", genre: "哲理", lines: [
+    [{ch:"半",py:'bàn'},{ch:"亩",py:'mǔ'},{ch:"方",py:'fāng'},{ch:"塘",py:'táng'},{ch:"一",py:'yī'},{ch:"鉴",py:'jiàn'},{ch:"开",py:'kāi'},{ch:"，",py:''}],
+    [{ch:"天",py:'tiān'},{ch:"光",py:'guāng'},{ch:"云",py:'yún'},{ch:"影",py:'yǐng'},{ch:"共",py:'gòng'},{ch:"徘",py:'pái'},{ch:"徊",py:'huái'},{ch:"。",py:''}],
+    [{ch:"问",py:'wèn'},{ch:"渠",py:'qú'},{ch:"那",py:'nà'},{ch:"得",py:'dé'},{ch:"清",py:'qīng'},{ch:"如",py:'rú'},{ch:"许",py:'xǔ'},{ch:"？",py:''}],
+    [{ch:"为",py:'wèi'},{ch:"有",py:'yǒu'},{ch:"源",py:'yuán'},{ch:"头",py:'tóu'},{ch:"活",py:'huó'},{ch:"水",py:'shuǐ'},{ch:"来",py:'lái'},{ch:"。",py:''}]
+  ], text: "半亩方塘一鉴开，天光云影共徘徊。问渠那得清如许？为有源头活水来。" },
 ];
 
 (function initPoems() {
