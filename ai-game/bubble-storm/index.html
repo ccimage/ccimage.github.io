@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+<title>BulletStorm · 弹珠风暴</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+
+  <header class="hud">
+    <div class="brand">
+      <span class="logo">◉</span>
+      <div class="brand-txt">
+        <b>弹珠风暴</b>
+        <i>BULLET STORM</i>
+      </div>
+    </div>
+
+    <div class="cards">
+      <div class="card c-lv">
+        <span class="lb">关卡</span>
+        <strong id="hLevel">1</strong>
+      </div>
+      <div class="card c-brick">
+        <span class="lb">砖块剩余</span>
+        <strong><em id="hLeft">0</em><span class="slash">/</span><span id="hTotal">0</span></strong>
+      </div>
+      <div class="card c-bullet">
+        <span class="lb">弹珠</span>
+        <strong id="hBullet">0</strong>
+      </div>
+      <div class="card c-buy">
+        <span class="lb">补给</span>
+        <div class="dots" id="hDots"></div>
+      </div>
+      <div class="card c-score">
+        <span class="lb">分数</span>
+        <strong id="hScore">0</strong>
+      </div>
+    </div>
+
+    <div class="tools">
+      <button class="icobtn" id="btnSound" title="音效开关">🔊</button>
+      <button class="icobtn" id="btnRestart" title="重新开始">⟲</button>
+    </div>
+  </header>
+
+  <div class="stage-wrap" id="stage">
+    <canvas id="cv"></canvas>
+
+    <div class="state-chip" id="chip">移动鼠标转向 · 按住蓄力，松手发射</div>
+
+    <div class="overlay hidden" id="overlay">
+      <div class="panel">
+        <div class="panel-icon" id="ovIcon">🎯</div>
+        <h2 id="ovTitle">标题</h2>
+        <p id="ovDesc">描述</p>
+        <div class="panel-stats" id="ovStats"></div>
+        <div class="panel-btns" id="ovBtns"></div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="bottom">
+    <div class="ammo">
+      <div class="ammo-box grow">
+        <span class="ammo-lb">场上各色剩余</span>
+        <div class="remain" id="remain"></div>
+      </div>
+    </div>
+    <div class="tip"><b>移动鼠标</b>控制炮口转向 · <b>按住蓄力</b>，松手发射 —— 力度决定初速 ｜ 高速弹珠撞光柱会分裂出多色弹珠</div>
+  </footer>
+
+</div>
+<script src="game.js"></script>
+</body>
+</html>
